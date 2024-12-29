@@ -330,6 +330,7 @@ function addProductToBill() {
 
     // Clear inputs
     document.getElementById('billing-quantity').value = '';
+    document.getElementById('billing-units').value = '';
     document.getElementById('billing-manual-price').value = '';
     if (isManualProduct) {
         document.getElementById('billing-product-manual').value = '';
@@ -551,120 +552,120 @@ function cancelBill(billId) {
 function generateProfessionalBillPDF(bill) {
     const template = `
         <div id="bill-pdf-content" style="padding: 20px; font-family: 'Arial', sans-serif; width: 210mm; margin: auto;">
-            <!-- Header Section -->
-            <div style="text-align: center; margin-bottom: 30px;">
-                <h1 style="font-size: 24px; margin: 0; font-weight: bold; color: #000;">SRI VINAYAGA TRADERS</h1>
-                <p style="margin: 5px 0; font-size: 14px;">123 Main Street, First Floor</p>
-                <p style="margin: 5px 0; font-size: 14px;">City Name, State - PIN Code</p>
-                <p style="margin: 5px 0; font-size: 14px;">Phone: +91 1234567890, +91 9876543210</p>
-                <p style="margin: 5px 0; font-size: 14px;">Email: info@srivinayagatraders.com</p>
-            </div>
+        <!-- Header Section -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="font-size: 24px; margin: 0; font-weight: bold; color: #000;">SRI VINAYAGA TRADERS</h1>
+            <p style="margin: 2px 0; font-size: 14px;">123 Main Street, First Floor</p>
+            <p style="margin: 2px 0; font-size: 14px;">City Name, State - PIN Code</p>
+            <p style="margin: 2px 0; font-size: 14px;">Phone: +91 1234567890, +91 9876543210</p>
+            <p style="margin: 2px 0; font-size: 14px;">Email: info@srivinayagatraders.com</p>
+        </div>
 
-            <h1 STYLE="font-size: 24px; text-align: center;">ESTIMATE</h1>
+        <h1 STYLE="font-size: 24px; text-align: center;">ESTIMATE</h1>
 
-            <!-- Bill Info Section -->
-            <div style="margin-bottom: 20px; border-bottom: 1px solid #000; padding-bottom: 5;">
-                <table style="width: 100%; font-size: 14px;">
-                    <tr>
-                        <td style="width: 30%; text-align: center;">
-                            <strong>Estimate No:</strong> ${bill.billNumber}
-                        </td>
-                        <td style="width: 35%; text-align: center;">
-                            <strong>Date:</strong> ${new Date(bill.date).toLocaleDateString()}
-                        </td>
-                        <td style="width: 35%; text-align: center;">
-                            <strong>Time:</strong> ${new Date(bill.date).toLocaleTimeString()}
-                        </td>
-                    </tr>                   
-                </table>
-            </div>
-
-            <!-- Customer & Staff Details -->
-            <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 14px;">
-                <div style="width: 48%; border: 1px solid #ddd; padding: 7px; border-radius: 5px;">
-                    <h3 style="margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Customer Details</h3>
-                    <p style="margin: 5px 0;"><strong>Name:</strong> ${bill.customer.name}</p>
-                    <p style="margin: 5px 0;"><strong>Mobile:</strong> ${bill.customer.mobile}</p>
-                    <p style="margin: 5px 0;"><strong>Address:</strong> ${bill.customer.address}</p>
-                </div>
-                <div style="width: 48%; border: 1px solid #ddd; padding: 7px; border-radius: 5px;">
-                    <h3 style="margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Staff Details</h3>
-                    <p style="margin: 5px 0;"><strong>Name:</strong> ${bill.staff.name}</p>
-                    <p style="margin: 5px 0;"><strong>Role:</strong> ${bill.staff.role}</p>
-                    <p style="margin: 5px 0;"><strong>ID:</strong> ${bill.staff.id}</p>
-                </div>
-            </div>
-
-            <!-- Products Table -->
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px;">
-                <thead>
-                    <tr style="background-color: #f8f9fa;">
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">S.No</th>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Brand</th>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Product</th>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">Quantity (KG)</th>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: right;">Price/KG</th>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: right;">Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${bill.items.map((item, index) => `
-                        <tr>
-                            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">${index + 1}</td>
-                            <td style="border: 1px solid #ddd; padding: 8px;">${item.brandName}</td>
-                            <td style="border: 1px solid #ddd; padding: 8px;">${item.productName}</td>
-                            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">${item.quantity}</td>
-                            <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">₹${item.price.toFixed(2)}</td>
-                            <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">₹${(item.quantity * item.price).toFixed(2)}</td>
-                        </tr>
-                    `).join('')}
-                </tbody>
+        <!-- Bill Info Section -->
+        <div style="margin-bottom: 10px; padding-bottom: 2;">
+            <table style="width: 100%; font-size: 14px;">
+                <tr>
+                    <td style="width: 30%; text-align: center; border: 1px solid #000000;">
+                        <strong>Estimate No:</strong> ${bill.billNumber}
+                    </td>
+                    <td style="width: 35%; text-align: center; border: 1px solid #000000;">
+                        <strong>Date:</strong> ${new Date(bill.date).toLocaleDateString()}
+                    </td>
+                    <td style="width: 35%; text-align: center; border: 1px solid #000000;">
+                        <strong>Time:</strong> ${new Date(bill.date).toLocaleTimeString()}
+                    </td>
+                </tr>                   
             </table>
+        </div>
 
-            <!-- Bill Summary -->
-            <div style="width: 100%; display: flex; justify-content: flex-end; margin-bottom: 30px; font-size: 14px;">
-                <table style="width: 300px;">
-                    <tr>
-                        <td style="text-align: center; padding: 6px 0;"><strong>Sub Total:</strong></td>
-                        <td style="text-align: center; padding: 6px 0;">₹${bill.subtotal.toFixed(2)}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center; padding: 6px 0;"><strong>GST (${bill.gstPercentage}%):</strong></td>
-                        <td style="text-align: center; padding: 6px 0;">₹${bill.gstAmount.toFixed(2)}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center; padding: 6px 0;"><strong>Transport Charges:</strong></td>
-                        <td style="text-align: center; padding: 6px 0;">₹${(bill.transportCharges || 0).toFixed(2)}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center; padding: 6px 0;"><strong>Extra Charges:</strong></td>
-                        <td style="text-align: center; padding: 6px 0;">₹${(bill.extraCharges || 0).toFixed(2)}</td>
-                    </tr>
-                    <tr style="border-top: 2px solid #000;">
-                        <td style="text-align: center; padding: 6px 0;"><strong>Total Amount:</strong></td>
-                        <td style="text-align: center; padding: 6px 0;"><strong>₹${bill.totalAmount.toFixed(2)}</strong></td>
-                    </tr>
-                </table>
+        <!-- Customer & Staff Details -->
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px;">
+            <div style="width: 48%; border: 1px solid #000000; padding: 7px; border-radius: 5px;">
+                <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #000000; padding-bottom: 2px;">Customer Details</h3>
+                <p style="margin: 1px 0;"><strong>Name:</strong> ${bill.customer.name}</p>
+                <p style="margin: 1px 0;"><strong>Mobile:</strong> ${bill.customer.mobile}</p>
+                <p style="margin: 1px 0;"><strong>Address:</strong> ${bill.customer.address}</p>
             </div>
+            <div style="width: 48%; border: 1px solid #000000; padding: 7px; border-radius: 5px;">
+                <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #000000; padding-bottom: 2px;">Staff Details</h3>
+                <p style="margin: 1px 0;"><strong>Name:</strong> ${bill.staff.name}</p>
+                <p style="margin: 1px 0;"><strong>Role:</strong> ${bill.staff.role}</p>
+                <p style="margin: 1px 0;"><strong>ID:</strong> ${bill.staff.id}</p>
+            </div>
+        </div>
 
-            <!-- Footer -->
-            <div style="margin-top: 50px; font-size: 14px;">
-                <div style="float: left; width: 50%;">
-                    <p><strong>Terms & Conditions:</strong></p>
-                    <ol style="margin: 5px 0; padding-left: 20px; font-size: 12px;">
-                        <li>Goods once sold will not be taken back</li>
-                        <li>Subject to local jurisdiction</li>
-                        <li>E. & O.E.</li>
-                    </ol>
-                </div>
-                <div style="float: right; width: 200px; text-align: center;">
-                    <div style="margin-bottom: 40px;">
-                        <p style="margin-bottom: 50px;"></p>
-                        <p style="margin: 0;"><strong>Authorized Signature</strong></p>
-                    </div>
+        <!-- Products Table -->
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 14px;">
+            <thead>
+                <tr style="background-color: #ffffff;">
+                    <th style="border: 1px solid #000000; padding: 3px; text-align: center;">S.No</th>
+                    <th style="border: 1px solid #000000; padding: 3px; text-align: left;">Brand</th>
+                    <th style="border: 1px solid #000000; padding: 3px; text-align: left;">Product</th>
+                    <th style="border: 1px solid #000000; padding: 3px; text-align: center;">Quantity (KG)</th>
+                    <th style="border: 1px solid #000000; padding: 3px; text-align: right;">Price/KG</th>
+                    <th style="border: 1px solid #000000; padding: 3px; text-align: right;">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${bill.items.map((item, index) => `
+                    <tr>
+                        <td style="border: 1px solid #000000; padding: 1px; text-align: center;">${index + 1}</td>
+                        <td style="border: 1px solid #000000; padding: 1px;">${item.brandName}</td>
+                        <td style="border: 1px solid #000000; padding: 1px;">${item.productName}</td>
+                        <td style="border: 1px solid #000000; padding: 1px; text-align: center;">${item.quantity}</td>
+                        <td style="border: 1px solid #000000; padding: 1px; text-align: right;">₹${item.price.toFixed(2)}</td>
+                        <td style="border: 1px solid #000000; padding: 1px; text-align: right;">₹${(item.quantity * item.price).toFixed(2)}</td>
+                    </tr>
+                `).join('')}
+            </tbody>
+        </table>
+
+        <!-- Bill Summary -->
+        <div style="width: 100%; display: flex; justify-content: flex-end; margin-bottom: 10px; font-size: 14px;">
+            <table style="width: 300px; border-collapse: collapse;">
+                <tr>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;"><strong>Sub Total:</strong></td>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;">₹${bill.subtotal.toFixed(2)}</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;"><strong>GST (${bill.gstPercentage}%):</strong></td>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;">₹${bill.gstAmount.toFixed(2)}</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;"><strong>Transport Charges:</strong></td>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;">₹${(bill.transportCharges || 0).toFixed(2)}</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;"><strong>Extra Charges:</strong></td>
+                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;">₹${(bill.extraCharges || 0).toFixed(2)}</td>
+                </tr>
+                <tr>
+                    <td style="border: 3px solid #000000; text-align: center; padding: 2px 0;"><strong>Total Amount:</strong></td>
+                    <td style="border: 3px solid #000000; text-align: center; padding: 2px 0;"><strong>₹${bill.totalAmount.toFixed(2)}</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <div style="margin-top: 20px; font-size: 14px;">
+            <div style="float: left; width: 50%;">
+                <p><strong>Terms & Conditions:</strong></p>
+                <ol style="margin: 5px 0; padding-left: 20px; font-size: 12px;">
+                    <li>Goods once sold will not be taken back</li>
+                    <li>Subject to local jurisdiction</li>
+                    <li>E. & O.E.</li>
+                </ol>
+            </div>
+            <div style="float: right; width: 200px; text-align: center;">
+                <div style="margin-bottom: 40px;">
+                    <p style="margin-bottom: 50px;"></p>
+                    <p style="margin: 0;"><strong>Authorized Signature</strong></p>
                 </div>
             </div>
         </div>
+    </div>
     `;
 
     // Create temporary container
