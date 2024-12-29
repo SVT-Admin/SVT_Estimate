@@ -131,6 +131,191 @@
       "extraCharges": 0,
       "totalAmount": 44800,
       "status": "ACTIVE"
+    },
+    {
+      "id": 1735498703205,
+      "billNumber": 4,
+      "date": "2024-12-29T18:58:23.205Z",
+      "customer": {
+        "name": "Vhj",
+        "mobile": "5868305029",
+        "address": "Mj"
+      },
+      "staff": {
+        "id": 1735383561853,
+        "name": "Ram",
+        "mobile": "9087970987",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1735498689589",
+          "brandName": "ARS",
+          "productName": "32mm",
+          "quantity": 600,
+          "price": 38,
+          "tax": 0,
+          "itemTotal": 22800
+        }
+      ],
+      "subtotal": 22800,
+      "gstPercentage": 10,
+      "gstAmount": 2280,
+      "transportCharges": 3000,
+      "extraCharges": 200,
+      "totalAmount": 28280,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1735499069998,
+      "billNumber": 5,
+      "date": "2024-12-29T19:04:29.998Z",
+      "customer": {
+        "name": "Meazha",
+        "mobile": "6000000052",
+        "address": "Kun"
+      },
+      "staff": {
+        "id": 1735383561853,
+        "name": "Ram",
+        "mobile": "9087970987",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1735498805281",
+          "brandName": "A",
+          "productName": "A",
+          "quantity": 300,
+          "price": 58,
+          "tax": 0,
+          "itemTotal": 17400
+        },
+        {
+          "productId": "manual-1735498933829",
+          "brandName": "B",
+          "productName": "B",
+          "quantity": 320,
+          "price": 68,
+          "tax": 0,
+          "itemTotal": 21760
+        },
+        {
+          "productId": "manual-1735498941090",
+          "brandName": "C",
+          "productName": "C",
+          "quantity": 950,
+          "price": 28,
+          "tax": 0,
+          "itemTotal": 26600
+        },
+        {
+          "productId": "manual-1735498950692",
+          "brandName": "D",
+          "productName": "J",
+          "quantity": 658,
+          "price": 53,
+          "tax": 0,
+          "itemTotal": 34874
+        },
+        {
+          "productId": "manual-1735498957707",
+          "brandName": "E",
+          "productName": "E",
+          "quantity": 980,
+          "price": 180,
+          "tax": 0,
+          "itemTotal": 176400
+        },
+        {
+          "productId": "manual-1735498967364",
+          "brandName": "F",
+          "productName": "F",
+          "quantity": 840,
+          "price": 248,
+          "tax": 0,
+          "itemTotal": 208320
+        },
+        {
+          "productId": "manual-1735498975082",
+          "brandName": "G",
+          "productName": "j",
+          "quantity": 350,
+          "price": 48,
+          "tax": 0,
+          "itemTotal": 16800
+        },
+        {
+          "productId": "manual-1735498981803",
+          "brandName": "H",
+          "productName": "H",
+          "quantity": 320,
+          "price": 19,
+          "tax": 0,
+          "itemTotal": 6080
+        },
+        {
+          "productId": "manual-1735498999151",
+          "brandName": "K",
+          "productName": "K",
+          "quantity": 920,
+          "price": 28,
+          "tax": 0,
+          "itemTotal": 25760
+        },
+        {
+          "productId": "manual-1735499007925",
+          "brandName": "V",
+          "productName": "V",
+          "quantity": 580,
+          "price": 18,
+          "tax": 0,
+          "itemTotal": 10440
+        },
+        {
+          "productId": "manual-1735499017147",
+          "brandName": "R",
+          "productName": "R",
+          "quantity": 820,
+          "price": 160,
+          "tax": 0,
+          "itemTotal": 131200
+        },
+        {
+          "productId": "manual-1735499031625",
+          "brandName": "L",
+          "productName": "L",
+          "quantity": 620,
+          "price": 54,
+          "tax": 0,
+          "itemTotal": 33480
+        },
+        {
+          "productId": "manual-1735499039701",
+          "brandName": "Y",
+          "productName": "Y",
+          "quantity": 625,
+          "price": 18,
+          "tax": 0,
+          "itemTotal": 11250
+        },
+        {
+          "productId": "manual-1735499048852",
+          "brandName": "X",
+          "productName": "X",
+          "quantity": 650,
+          "price": 55,
+          "tax": 0,
+          "itemTotal": 35750
+        }
+      ],
+      "subtotal": 756114,
+      "gstPercentage": 18,
+      "gstAmount": 136100.52,
+      "transportCharges": 20000,
+      "extraCharges": 1000,
+      "totalAmount": 913214.52,
+      "status": "ACTIVE"
     }
   ],
   "staff": [
@@ -141,7 +326,7 @@
       "role": "Staff"
     }
   ],
-  "currentBillNumber": 4,
-  "timestamp": "2024-12-28T17:59:41.426Z",
+  "currentBillNumber": 6,
+  "timestamp": "2024-12-29T19:28:53.729Z",
   "version": "1.0"
 }
