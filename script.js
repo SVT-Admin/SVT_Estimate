@@ -582,17 +582,11 @@ function generateProfessionalBillPDF(bill) {
 
         <!-- Customer & Staff Details -->
         <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px;">
-            <div style="width: 48%; border: 1px solid #000000; padding: 7px; border-radius: 5px;">
+            <div style="width: 100%; border: 1px solid #000000; padding: 3px; border-radius: 5px;">
                 <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #000000; padding-bottom: 2px;">Customer Details</h3>
                 <p style="margin: 1px 0;"><strong>Name:</strong> ${bill.customer.name}</p>
                 <p style="margin: 1px 0;"><strong>Mobile:</strong> ${bill.customer.mobile}</p>
                 <p style="margin: 1px 0;"><strong>Address:</strong> ${bill.customer.address}</p>
-            </div>
-            <div style="width: 48%; border: 1px solid #000000; padding: 7px; border-radius: 5px;">
-                <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #000000; padding-bottom: 2px;">Staff Details</h3>
-                <p style="margin: 1px 0;"><strong>Name:</strong> ${bill.staff.name}</p>
-                <p style="margin: 1px 0;"><strong>Role:</strong> ${bill.staff.role}</p>
-                <p style="margin: 1px 0;"><strong>ID:</strong> ${bill.staff.id}</p>
             </div>
         </div>
 
