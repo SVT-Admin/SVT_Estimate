@@ -381,15 +381,12 @@ function updateBillTotals(subtotal = null) {
         subtotal = currentBillItems.reduce((sum, item) => sum + (item.quantity * item.price), 0);
     }
 
-    const gstPercentage = parseFloat(document.getElementById('gst-percentage').value) || 0;
     const transportCharges = parseFloat(document.getElementById('transport-charges').value) || 0;
     const extraCharges = parseFloat(document.getElementById('extra-charges').value) || 0;
     
-    const gstAmount = subtotal * (gstPercentage / 100);
-    const grandTotal = subtotal + gstAmount + transportCharges + extraCharges;
+    const grandTotal = subtotal + transportCharges + extraCharges;
 
     document.getElementById('bill-subtotal').textContent = subtotal.toFixed(2);
-    document.getElementById('gst-amount').textContent = gstAmount.toFixed(2);
     document.getElementById('transport-amount').textContent = transportCharges.toFixed(2);
     document.getElementById('extra-amount').textContent = extraCharges.toFixed(2);
     document.getElementById('bill-total-amount').textContent = grandTotal.toFixed(2);
@@ -430,7 +427,6 @@ function formatBillDetailsForTelegram(bill) {
     // Bill Summary
     message += `\n*BILL SUMMARY*\n`;
     message += `Subtotal: ₹${bill.subtotal.toFixed(2)}\n`;
-    message += `GST (${bill.gstPercentage}%): ₹${bill.gstAmount.toFixed(2)}\n`;
     if (bill.transportCharges) message += `Transport: ₹${bill.transportCharges.toFixed(2)}\n`;
     if (bill.extraCharges) message += `Extra Charges: ₹${bill.extraCharges.toFixed(2)}\n`;
     message += `*TOTAL AMOUNT: ₹${bill.totalAmount.toFixed(2)}*`;
@@ -477,12 +473,10 @@ function generateBill() {
 
     const billNumber = incrementBillNumber();
     const subtotal = currentBillItems.reduce((sum, item) => sum + (item.quantity * item.price), 0);
-    const gstPercentage = parseFloat(document.getElementById('gst-percentage').value) || 0;
     const transportCharges = parseFloat(document.getElementById('transport-charges').value) || 0;
     const extraCharges = parseFloat(document.getElementById('extra-charges').value) || 0;
     
-    const gstAmount = subtotal * (gstPercentage / 100);
-    const grandTotal = subtotal + gstAmount + transportCharges + extraCharges;
+    const grandTotal = subtotal + transportCharges + extraCharges;
 
     const bill = {
         id: Date.now(),
@@ -495,8 +489,6 @@ function generateBill() {
             itemTotal: item.quantity * item.price
         })),
         subtotal: subtotal,
-        gstPercentage: gstPercentage,
-        gstAmount: gstAmount,
         transportCharges: transportCharges,
         extraCharges: extraCharges,
         totalAmount: grandTotal,
@@ -519,7 +511,6 @@ function generateBill() {
     document.getElementById('staff-select').value = '';
     document.getElementById('transport-charges').value = '';
     document.getElementById('extra-charges').value = '';
-    document.getElementById('gst-percentage').value = '';
 
     updateBillItemsTable();
     alert(`Bill #${billNumber} Generated Successfully!`);
@@ -582,8 +573,8 @@ function generateProfessionalBillPDF(bill) {
 
         <!-- Customer & Staff Details -->
         <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px;">
-            <div style="width: 100%; border: 1px solid #898989; padding: 2px; border-radius: 5px;">
-                <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #898989; padding-bottom: 2px;">Customer Details</h3>
+            <div style="width: 100%; border: 1px solid #ffffff; padding: 2px; border-radius: 5px;">
+                <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #ffffff; padding-bottom: 2px;">Customer Details</h3>
                 <p style="margin: 1px 0;"><strong>Name:</strong> ${bill.customer.name}</p>
                 <p style="margin: 1px 0;"><strong>Mobile:</strong> ${bill.customer.mobile}</p>
                 <p style="margin: 1px 0;"><strong>Address:</strong> ${bill.customer.address}</p>
@@ -622,10 +613,6 @@ function generateProfessionalBillPDF(bill) {
                 <tr>
                     <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;"><strong>Sub Total:</strong></td>
                     <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;">₹${bill.subtotal.toFixed(2)}</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;"><strong>GST (${bill.gstPercentage}%):</strong></td>
-                    <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;">₹${bill.gstAmount.toFixed(2)}</td>
                 </tr>
                 <tr>
                     <td style="border: 1px solid #000000; text-align: center; padding: 2px 0;"><strong>Transport Charges:</strong></td>
@@ -753,10 +740,6 @@ function showBillDetails(bill) {
                         <td style="text-align: center;"><b>₹${bill.subtotal.toFixed(2)}</b></td>
                     </tr>
                     <tr>
-                        <td colspan="3" style="text-align: right;"><strong>GST (${bill.gstPercentage}%):</strong></td>
-                        <td style="text-align: center;"><b>₹${bill.gstAmount.toFixed(2)}</b></td>
-                    </tr>
-                    <tr>
                         <td colspan="3" style="text-align: right;"><strong>Transport Charges:</strong></td>
                         <td style="text-align: center;"><b>₹${(bill.transportCharges || 0).toFixed(2)}</b></td>
                     </tr>
@@ -816,11 +799,10 @@ function generateReport() {
         billCount: acc.billCount + 1,
         totalAmount: acc.totalAmount + (bill.totalAmount || 0),
         subtotal: acc.subtotal + (bill.subtotal || 0),
-        gstAmount: acc.gstAmount + (bill.gstAmount || 0),
         transportCharges: acc.transportCharges + (bill.transportCharges || 0),
         extraCharges: acc.extraCharges + (bill.extraCharges || 0)
     }), {
-        billCount: 0, totalAmount: 0, subtotal: 0, gstAmount: 0,
+        billCount: 0, totalAmount: 0, subtotal: 0,
         transportCharges: 0, extraCharges: 0
     });
 
@@ -828,7 +810,6 @@ function generateReport() {
         <h3>Today's Summary (${new Date().toLocaleDateString()})</h3>
         <p>Total Active Bills: ${todayTotals.billCount}</p>
         <p>Subtotal: ₹${todayTotals.subtotal.toFixed(2)}</p>
-        <p>GST Amount: ₹${todayTotals.gstAmount.toFixed(2)}</p>
         <p>Transport Charges: ₹${(todayTotals.transportCharges || 0).toFixed(2)}</p>
         <p>Extra Charges: ₹${(todayTotals.extraCharges || 0).toFixed(2)}</p>
         <p>Total Sales Amount: ₹${todayTotals.totalAmount.toFixed(2)}</p>
