@@ -380,10 +380,6 @@ function createBillElement(bill) {
                             <td class="totals-value">₹${bill.subtotal.toFixed(2)}</td>
                         </tr>
                         <tr>
-                            <td class="totals-label">GST (${bill.gstPercentage}%):</td>
-                            <td class="totals-value">₹${bill.gstAmount.toFixed(2)}</td>
-                        </tr>
-                        <tr>
                             <td class="totals-label">Transport Charges:</td>
                             <td class="totals-value">₹${(bill.transportCharges || 0).toFixed(2)}</td>
                         </tr>
