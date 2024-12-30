@@ -10,6 +10,254 @@ function initStorage() {
 // Call initStorage when the page loads
 window.onload = initStorage;
 
+// Script loader with retry functionality
+class ScriptLoader {
+    constructor() {
+        this.scripts = [
+            {
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js',
+                id: 'sql-js',
+                loaded: false
+            },
+            {
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js',
+                id: 'jspdf',
+                loaded: false
+            },
+            {
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js',
+                id: 'html2pdf',
+                loaded: false
+            }
+        ];
+        
+        this.initializeLoader();
+    }
+
+    showLoaderOverlay(show) {
+        let overlay = document.getElementById('loader-overlay');
+        if (!overlay && show) {
+            overlay = document.createElement('div');
+            overlay.id = 'loader-overlay';
+            overlay.innerHTML = `
+                <div class="loader-content">
+                    <div class="loader-spinner"></div>
+                    <div class="loader-message">Loading resources...</div>
+                    <div class="loader-status">Attempting to load required files...</div>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        } else if (overlay && !show) {
+            overlay.remove();
+        }
+    }
+
+    updateLoaderStatus(message) {
+        const status = document.querySelector('.loader-status');
+        if (status) {
+            status.textContent = message;
+        }
+    }
+
+    async loadScript(scriptConfig, retryCount = 0) {
+        const maxRetries = 3;
+        const retryDelay = 3000; // 3 seconds
+
+        try {
+            if (document.getElementById(scriptConfig.id)) {
+                return true;
+            }
+
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = scriptConfig.src;
+                script.id = scriptConfig.id;
+
+                script.onload = () => {
+                    scriptConfig.loaded = true;
+                    resolve(true);
+                };
+
+                script.onerror = () => {
+                    if (retryCount < maxRetries) {
+                        this.updateLoaderStatus(
+                            `Failed to load ${scriptConfig.id}. Retrying in ${retryDelay/1000} seconds... (Attempt ${retryCount + 1}/${maxRetries})`
+                        );
+                        setTimeout(() => {
+                            script.remove();
+                            this.loadScript(scriptConfig, retryCount + 1)
+                                .then(resolve)
+                                .catch(reject);
+                        }, retryDelay);
+                    } else {
+                        reject(new Error(`Failed to load ${scriptConfig.id} after ${maxRetries} attempts`));
+                    }
+                };
+
+                document.head.appendChild(script);
+            });
+        } catch (error) {
+            if (retryCount < maxRetries) {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        resolve(this.loadScript(scriptConfig, retryCount + 1));
+                    }, retryDelay);
+                });
+            }
+            throw error;
+        }
+    }
+
+    async loadAllScripts() {
+        this.showLoaderOverlay(true);
+        let allLoaded = true;
+
+        for (const script of this.scripts) {
+            if (!script.loaded) {
+                try {
+                    this.updateLoaderStatus(`Loading ${script.id}...`);
+                    await this.loadScript(script);
+                } catch (error) {
+                    allLoaded = false;
+                    console.error(`Failed to load ${script.id}:`, error);
+                    this.updateLoaderStatus(`Error loading ${script.id}. Please check your internet connection.`);
+                }
+            }
+        }
+
+        if (allLoaded) {
+            this.showLoaderOverlay(false);
+            this.showNotification('All resources loaded successfully', 'success');
+        } else {
+            this.updateLoaderStatus('Some resources failed to load. Will retry when connection is restored.');
+        }
+
+        return allLoaded;
+    }
+
+    showNotification(message, type = 'error') {
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            setTimeout(() => notification.remove(), 500);
+        }, 5000);
+    }
+
+    async checkAndLoadMissingScripts() {
+        const unloadedScripts = this.scripts.filter(script => !script.loaded);
+        if (unloadedScripts.length > 0) {
+            return this.loadAllScripts();
+        }
+        return true;
+    }
+
+    initializeLoader() {
+        // Add required styles
+        const styles = document.createElement('style');
+        styles.textContent = `
+            #loader-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+            }
+
+            .loader-content {
+                text-align: center;
+                color: white;
+                padding: 20px;
+                border-radius: 8px;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .loader-spinner {
+                border: 4px solid #f3f3f3;
+                border-top: 4px solid #3498db;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+                margin: 0 auto 15px;
+            }
+
+            .loader-message {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .loader-status {
+                font-size: 14px;
+                color: #ccc;
+            }
+
+            .notification {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 15px 25px;
+                border-radius: 5px;
+                color: white;
+                z-index: 10000;
+                opacity: 1;
+                transition: opacity 0.5s;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+
+            .notification.error {
+                background-color: #ff4444;
+            }
+
+            .notification.success {
+                background-color: #44bb44;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(styles);
+
+        // Add network event listeners
+        window.addEventListener('online', () => {
+            this.showNotification('Network connection restored', 'success');
+            this.checkAndLoadMissingScripts();
+        });
+
+        window.addEventListener('offline', () => {
+            this.showNotification('Network connection lost');
+        });
+
+        // Initial load attempt
+        if (navigator.onLine) {
+            this.loadAllScripts();
+        } else {
+            this.showNotification('No internet connection. Please check your network.');
+        }
+    }
+}
+
+const scriptLoader = new ScriptLoader();
+
+async function initializeApp() {
+    if (await scriptLoader.loadAllScripts()) {
+        initStorage();
+        loadStaffDropdown();
+        showSection('billing');
+    }
+}
+initializeApp();
+
 function getCurrentBillNumber() {
     return parseInt(localStorage.getItem('currentBillNumber')) || 1;
 }
