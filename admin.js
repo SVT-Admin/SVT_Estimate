@@ -532,24 +532,18 @@ async function restoreData() {
     const url = 'https://raw.githubusercontent.com/SVT-Admin/SVT_Estimate/refs/heads/main/data.json';
 
     try {
-        // Fetch the raw JSON text from the URL
         const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error(`Failed to fetch the file. HTTP status: ${response.status}`);
         }
 
-        const rawText = await response.text(); // Get the raw text content of the file
-
-        // Parse the raw text into JSON
+        const rawText = await response.text();
         const backup = JSON.parse(rawText);
 
-        // Validate the backup structure
         if (!backup.version || !backup.timestamp || !backup.brands || !backup.products || !backup.bills || !backup.staff) {
             throw new Error('Invalid backup file format.');
         }
-
-        // Confirm restoration
         if (confirm('This will replace all current data. Are you sure you want to proceed?')) {
             localStorage.setItem('brands', JSON.stringify(backup.brands));
             localStorage.setItem('products', JSON.stringify(backup.products));
