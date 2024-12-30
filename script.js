@@ -551,7 +551,7 @@ function cancelBill(billId) {
 
 function generateProfessionalBillPDF(bill) {
     const template = `
-        <div id="bill-pdf-content" style="padding: 20px; font-family: 'Arial', sans-serif; width: 210mm; margin: auto;">
+    <div id="bill-pdf-content" style="padding: 20px; font-family: 'Arial', sans-serif; width: 210mm; margin: auto;">
         <!-- Header Section -->
         <div style="text-align: center; margin-bottom: 30px;">
             <h1 style="font-size: 24px; margin: 0; font-weight: bold; color: #000;">SRI VINAYAGA TRADERS</h1>
@@ -567,13 +567,13 @@ function generateProfessionalBillPDF(bill) {
         <div style="margin-bottom: 10px; padding-bottom: 2;">
             <table style="width: 100%; font-size: 14px;">
                 <tr>
-                    <td style="width: 30%; text-align: center; border: 1px solid #000000;">
+                    <td style="width: 30%; text-align: center; border: 1px solid #535353;">
                         <strong>Estimate No:</strong> ${bill.billNumber}
                     </td>
-                    <td style="width: 35%; text-align: center; border: 1px solid #000000;">
+                    <td style="width: 35%; text-align: center; border: 1px solid #535353;">
                         <strong>Date:</strong> ${new Date(bill.date).toLocaleDateString()}
                     </td>
-                    <td style="width: 35%; text-align: center; border: 1px solid #000000;">
+                    <td style="width: 35%; text-align: center; border: 1px solid #535353;">
                         <strong>Time:</strong> ${new Date(bill.date).toLocaleTimeString()}
                     </td>
                 </tr>                   
@@ -582,8 +582,8 @@ function generateProfessionalBillPDF(bill) {
 
         <!-- Customer & Staff Details -->
         <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px;">
-            <div style="width: 100%; border: 1px solid #000000; padding: 3px; border-radius: 5px;">
-                <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #000000; padding-bottom: 2px;">Customer Details</h3>
+            <div style="width: 100%; border: 1px solid #898989; padding: 2px; border-radius: 5px;">
+                <h3 style="margin: 0 0 2px 0; font-size: 16px; border-bottom: 1px solid #898989; padding-bottom: 2px;">Customer Details</h3>
                 <p style="margin: 1px 0;"><strong>Name:</strong> ${bill.customer.name}</p>
                 <p style="margin: 1px 0;"><strong>Mobile:</strong> ${bill.customer.mobile}</p>
                 <p style="margin: 1px 0;"><strong>Address:</strong> ${bill.customer.address}</p>
