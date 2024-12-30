@@ -131,16 +131,12 @@
             </div>
             <div class="bill-summary">
                 <div class="form-group">
-                    <input type="number" id="gst-percentage" placeholder="Enter GST %" step="1" max="100" onchange="updateBillTotals()" required>
-                </div> 
-                <div class="form-group">
                     <input type="number" id="transport-charges" placeholder="Enter Transport Charges" step="50" onchange="updateBillTotals()" required>
                 </div>                  
                 <div class="form-group">
                     <input type="number" id="extra-charges" placeholder="Enter Extra Charges" step="11" onchange="updateBillTotals()" required>
                 </div>
                 <p>Subtotal: ₹<span id="bill-subtotal">0.00</span></p>
-                <p>GST Amount: ₹<span id="gst-amount">0.00</span></p>
                 <p>Transport Charges: ₹<span id="transport-amount">0.00</span></p>
                 <p>Extra Charges: ₹<span id="extra-amount">0.00</span></p>
                 <p class="total-amount">Grand Total: ₹<span id="bill-total-amount">0.00</span></p>
