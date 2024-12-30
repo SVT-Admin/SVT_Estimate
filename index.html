@@ -4,22 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sri Vinayaga Traders - Product Management and Billing System</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Network Error Overlay -->
-    <div id="networkError" class="network-error">
-        <div class="network-error-icon">❌</div>
-        <h2>Network Error</h2>
-        <p>Unable to load required resources. Please check your internet connection.</p>
-        <button class="reload-btn" onclick="window.location.reload()">
-            🔄 Reload Page
-        </button>
-    </div>
-
     <header>
         <h1>SRI VINAYAGA TRADERS</h1>
     </header>
@@ -194,70 +181,7 @@
             </div>
         </section>
     </div>
-<script>
-    let scriptsLoaded = 0;
-    const requiredScripts = 3; // Number of external scripts we need to load
 
-    function handleScriptError() {
-        document.getElementById('networkError').style.display = 'block';
-    }
-
-    function handleScriptLoad() {
-        scriptsLoaded++;
-        if (scriptsLoaded === requiredScripts) {
-            // All scripts loaded successfully
-            initializeApp(); // Your initialization function
-        }
-    }
-
-    function loadScripts() {
-        // Create and load SQL.js
-        const sqlScript = document.createElement('script');
-        sqlScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js';
-        sqlScript.onerror = handleScriptError;
-        sqlScript.onload = handleScriptLoad;
-
-        // Create and load jsPDF
-        const pdfScript = document.createElement('script');
-        pdfScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
-        pdfScript.onerror = handleScriptError;
-        pdfScript.onload = handleScriptLoad;
-
-        // Create and load html2pdf
-        const html2pdfScript = document.createElement('script');
-        html2pdfScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
-        html2pdfScript.onerror = handleScriptError;
-        html2pdfScript.onload = handleScriptLoad;
-
-        // Load your main script last
-        const mainScript = document.createElement('script');
-        mainScript.src = 'script.js';
-        mainScript.onerror = handleScriptError;
-
-        // Append all scripts
-        document.body.appendChild(sqlScript);
-        document.body.appendChild(pdfScript);
-        document.body.appendChild(html2pdfScript);
-        document.body.appendChild(mainScript);
-    }
-
-    // Check network status before loading scripts
-    if (navigator.onLine) {
-        loadScripts();
-    } else {
-        handleScriptError();
-    }
-
-    // Listen for online/offline events
-    window.addEventListener('online', () => {
-        document.getElementById('networkError').style.display = 'none';
-        location.reload(); // Reload when connection is restored
-    });
-
-    window.addEventListener('offline', () => {
-        document.getElementById('networkError').style.display = 'block';
-    });
-</script>
 <script src="script.js"></script>
 </body>
 </html>
