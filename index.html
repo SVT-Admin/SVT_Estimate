@@ -115,11 +115,11 @@
             const password = document.getElementById('password').value;
             const errorMessage = document.getElementById('errorMessage');
             
-            if (username === 'svtstaff' && password === 'svt20') {
+            if (username === 'svtstaff' && password === 'svt123') {
                 // Store login state in sessionStorage
                 sessionStorage.setItem('isLoggedIn', 'true');
                 // Redirect to index.html
-                window.location.href = 'index.html';
+                window.location.href = 'https://tinyurl.com/svtestimation';
             } else {
                 errorMessage.style.display = 'block';
             }
@@ -130,7 +130,7 @@
         // Check if user is already logged in
         window.onload = function() {
             if (sessionStorage.getItem('isLoggedIn') === 'true') {
-                window.location.href = 'index.html';
+                window.location.href = 'https://tinyurl.com/svtestimation';
             }
         };
     </script>
