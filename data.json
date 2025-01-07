@@ -1,49 +1,159 @@
 {
-  "brands": [],
-  "products": [],
+  "brands": [
+    {
+      "id": 1736102403330,
+      "name": "ARS",
+      "description": ""
+    },
+    {
+      "id": 1736254227487,
+      "name": "JSW",
+      "description": ""
+    }
+  ],
+  "products": [
+    {
+      "id": 1736102403331,
+      "brandId": 1736102403330,
+      "name": "16mm"
+    },
+    {
+      "id": 1736102421730,
+      "brandId": "1736102403330",
+      "name": "20mm"
+    },
+    {
+      "id": 1736102439909,
+      "brandId": "1736102403330",
+      "name": "32mm"
+    },
+    {
+      "id": 1736254227487,
+      "brandId": 1736254227487,
+      "name": "16mm"
+    },
+    {
+      "id": 1736254245383,
+      "brandId": "1736254227487",
+      "name": "20mm"
+    },
+    {
+      "id": 1736254259376,
+      "brandId": "1736254227487",
+      "name": "25mm"
+    }
+  ],
   "bills": [
     {
-      "id": 1735541183815,
+      "id": 1736102449306,
       "billNumber": 1,
-      "date": "2024-12-30T06:46:23.815Z",
+      "date": "2025-01-05T18:40:49.306Z",
       "customer": {
-        "name": "hgfhf",
-        "mobile": "7578587597",
-        "address": "vcfchg"
+        "name": "Test",
+        "mobile": "9568574251",
+        "address": "Test"
       },
       "staff": {
-        "id": 1735541146051,
+        "id": 1736102350766,
         "name": "Ram",
-        "mobile": "7987987864",
-        "role": "staff"
+        "mobile": "9725855074",
+        "role": "Staff"
       },
       "items": [
         {
-          "productId": "manual-1735541176410",
-          "brandName": "ars",
+          "productId": "manual-1736102403331",
+          "brandName": "ARS",
           "productName": "16mm",
-          "quantity": 700,
-          "price": 42,
-          "tax": 0,
-          "itemTotal": 29400
+          "quantity": 600,
+          "units": 58,
+          "price": 60,
+          "itemTotal": 36000
+        },
+        {
+          "productId": "manual-1736102421730",
+          "brandName": "ARS",
+          "productName": "20mm",
+          "quantity": 900,
+          "units": 75,
+          "price": 65,
+          "itemTotal": 58500
+        },
+        {
+          "productId": "manual-1736102439910",
+          "brandName": "ARS",
+          "productName": "32mm",
+          "quantity": 500,
+          "units": 31,
+          "price": 51,
+          "itemTotal": 25500
         }
       ],
-      "subtotal": 29400,
-      "transportCharges": 500,
+      "subtotal": 120000,
+      "transportCharges": 2000,
       "extraCharges": 0,
-      "totalAmount": 29900,
+      "totalAmount": 122000,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1736254273555,
+      "billNumber": 2,
+      "date": "2025-01-07T12:51:13.555Z",
+      "customer": {
+        "name": "Test",
+        "mobile": "9998888589",
+        "address": "Test"
+      },
+      "staff": {
+        "id": 1736102350766,
+        "name": "Ram",
+        "mobile": "9725855074",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1736254227488",
+          "brandName": "JSW",
+          "productName": "16mm",
+          "quantity": 600,
+          "units": 52,
+          "price": 61,
+          "itemTotal": 36600
+        },
+        {
+          "productId": "manual-1736254245383",
+          "brandName": "JSW",
+          "productName": "20mm",
+          "quantity": 650,
+          "units": 52,
+          "price": 63,
+          "itemTotal": 40950
+        },
+        {
+          "productId": "manual-1736254259376",
+          "brandName": "JSW",
+          "productName": "25mm",
+          "quantity": 900,
+          "units": 58,
+          "price": 68,
+          "itemTotal": 61200
+        }
+      ],
+      "subtotal": 138750,
+      "transportCharges": 3000,
+      "extraCharges": 0,
+      "totalAmount": 141750,
       "status": "ACTIVE"
     }
   ],
   "staff": [
     {
-      "id": 1735541146051,
+      "id": 1736102350766,
       "name": "Ram",
-      "mobile": "7987987864",
-      "role": "staff"
+      "mobile": "9725855074",
+      "role": "Staff"
     }
   ],
-  "currentBillNumber": 2,
-  "timestamp": "2024-12-30T06:49:15.636Z",
+  "currentBillNumber": 3,
+  "timestamp": "2025-01-07T12:51:13.563Z",
   "version": "1.0"
 }
