@@ -9,6 +9,11 @@
       "id": 1736254227487,
       "name": "JSW",
       "description": ""
+    },
+    {
+      "id": 1736269726500,
+      "name": "BlueGold",
+      "description": ""
     }
   ],
   "products": [
@@ -41,6 +46,16 @@
       "id": 1736254259376,
       "brandId": "1736254227487",
       "name": "25mm"
+    },
+    {
+      "id": 1736269732884,
+      "brandId": "1736269726500",
+      "name": "16mm"
+    },
+    {
+      "id": 1736269782145,
+      "brandId": "1736269726500",
+      "name": "32mm"
     }
   ],
   "bills": [
@@ -142,18 +157,69 @@
       "transportCharges": 3000,
       "extraCharges": 0,
       "totalAmount": 141750,
+      "status": "CANCELLED",
+      "cancellationDate": "2025-01-07T17:06:57.446Z"
+    },
+    {
+      "id": 1736269796454,
+      "billNumber": 3,
+      "date": "2025-01-07T17:09:56.454Z",
+      "customer": {
+        "name": "Bala",
+        "mobile": "6856595678",
+        "address": "Kundrathur"
+      },
+      "staff": {
+        "id": 1736269678988,
+        "name": "Ram",
+        "mobile": "9359565677",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736269732884",
+          "brandName": "BlueGold",
+          "productName": "16mm",
+          "quantity": 800,
+          "units": 45,
+          "price": 60,
+          "itemTotal": 48000
+        },
+        {
+          "productId": "1736254245383",
+          "brandName": "JSW",
+          "productName": "20mm",
+          "quantity": 650,
+          "units": 58,
+          "price": 64,
+          "itemTotal": 41600
+        },
+        {
+          "productId": "manual-1736269782145",
+          "brandName": "BlueGold",
+          "productName": "32mm",
+          "quantity": 680,
+          "units": 41,
+          "price": 58,
+          "itemTotal": 39440
+        }
+      ],
+      "subtotal": 129040,
+      "transportCharges": 2000,
+      "extraCharges": 150,
+      "totalAmount": 131190,
       "status": "ACTIVE"
     }
   ],
   "staff": [
     {
-      "id": 1736102350766,
+      "id": 1736269678988,
       "name": "Ram",
-      "mobile": "9725855074",
+      "mobile": "9359565677",
       "role": "Staff"
     }
   ],
-  "currentBillNumber": 3,
-  "timestamp": "2025-01-07T12:51:13.563Z",
+  "currentBillNumber": 4,
+  "timestamp": "2025-01-07T17:10:51.783Z",
   "version": "1.0"
 }
