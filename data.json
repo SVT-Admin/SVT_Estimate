@@ -1,225 +1,750 @@
 {
   "brands": [
     {
-      "id": 1736102403330,
+      "id": 1736662792168,
+      "name": "I steel",
+      "description": ""
+    },
+    {
+      "id": 1736662939760,
       "name": "ARS",
-      "description": ""
+      "description": "8mm"
     },
     {
-      "id": 1736254227487,
+      "id": 1736663084729,
+      "name": "Arun",
+      "description": "TMT"
+    },
+    {
+      "id": 1736663163346,
+      "name": "Amman-TRY",
+      "description": "TMT"
+    },
+    {
+      "id": 1736663228798,
+      "name": "Blue Gold",
+      "description": "TMT"
+    },
+    {
+      "id": 1736663773572,
       "name": "JSW",
+      "description": "TMT"
+    },
+    {
+      "id": 1736663928433,
+      "name": "Kamachi",
+      "description": "TMT"
+    },
+    {
+      "id": 1736663983224,
+      "name": "GBR",
+      "description": "TMT"
+    },
+    {
+      "id": 1736664046729,
+      "name": "Pulkit",
+      "description": "TMT"
+    },
+    {
+      "id": 1736664196223,
+      "name": "MS Pipe",
+      "description": "MS pipe"
+    },
+    {
+      "id": 1736665055291,
+      "name": "Rings",
       "description": ""
     },
     {
-      "id": 1736269726500,
-      "name": "BlueGold",
+      "id": 1736665107329,
+      "name": "Bindingwire",
+      "description": ""
+    },
+    {
+      "id": 1736666466459,
+      "name": "Cement",
       "description": ""
     }
   ],
   "products": [
     {
-      "id": 1736102403331,
-      "brandId": 1736102403330,
-      "name": "16mm"
+      "id": 1736662990819,
+      "brandId": "1736662939760",
+      "name": "8MM"
     },
     {
-      "id": 1736102421730,
-      "brandId": "1736102403330",
-      "name": "20mm"
+      "id": 1736663000554,
+      "brandId": "1736662939760",
+      "name": "10MM"
     },
     {
-      "id": 1736102439909,
-      "brandId": "1736102403330",
-      "name": "32mm"
+      "id": 1736663007494,
+      "brandId": "1736662939760",
+      "name": "12MM"
     },
     {
-      "id": 1736254227487,
-      "brandId": 1736254227487,
-      "name": "16mm"
+      "id": 1736663015482,
+      "brandId": "1736662939760",
+      "name": "16MM"
     },
     {
-      "id": 1736254245383,
-      "brandId": "1736254227487",
-      "name": "20mm"
+      "id": 1736663021340,
+      "brandId": "1736662939760",
+      "name": "20MM"
     },
     {
-      "id": 1736254259376,
-      "brandId": "1736254227487",
+      "id": 1736663027050,
+      "brandId": "1736662939760",
+      "name": "25MM"
+    },
+    {
+      "id": 1736663042858,
+      "brandId": "1736662792168",
+      "name": "8MM"
+    },
+    {
+      "id": 1736663047501,
+      "brandId": "1736662792168",
+      "name": "10MM"
+    },
+    {
+      "id": 1736663052477,
+      "brandId": "1736662792168",
+      "name": "12MM"
+    },
+    {
+      "id": 1736663060333,
+      "brandId": "1736662792168",
+      "name": "16MM"
+    },
+    {
+      "id": 1736663065225,
+      "brandId": "1736662792168",
+      "name": "20MM"
+    },
+    {
+      "id": 1736663096112,
+      "brandId": "1736663084729",
+      "name": "8MM"
+    },
+    {
+      "id": 1736663101120,
+      "brandId": "1736663084729",
+      "name": "10MM"
+    },
+    {
+      "id": 1736663104749,
+      "brandId": "1736663084729",
+      "name": "12MM"
+    },
+    {
+      "id": 1736663109441,
+      "brandId": "1736663084729",
+      "name": "16MM"
+    },
+    {
+      "id": 1736663113935,
+      "brandId": "1736663084729",
+      "name": "20MM"
+    },
+    {
+      "id": 1736663119409,
+      "brandId": "1736663084729",
       "name": "25mm"
     },
     {
-      "id": 1736269732884,
-      "brandId": "1736269726500",
-      "name": "16mm"
+      "id": 1736663176808,
+      "brandId": "1736663163346",
+      "name": "8MM"
     },
     {
-      "id": 1736269782145,
-      "brandId": "1736269726500",
-      "name": "32mm"
+      "id": 1736663181517,
+      "brandId": "1736663163346",
+      "name": "10MM"
+    },
+    {
+      "id": 1736663185444,
+      "brandId": "1736663163346",
+      "name": "12MM"
+    },
+    {
+      "id": 1736663188873,
+      "brandId": "1736663163346",
+      "name": "16MM"
+    },
+    {
+      "id": 1736663192235,
+      "brandId": "1736663163346",
+      "name": "20MM"
+    },
+    {
+      "id": 1736663205781,
+      "brandId": "1736663163346",
+      "name": "25MM"
+    },
+    {
+      "id": 1736663244024,
+      "brandId": "1736663228798",
+      "name": "8MM"
+    },
+    {
+      "id": 1736663257420,
+      "brandId": "1736663228798",
+      "name": "10MM"
+    },
+    {
+      "id": 1736663263046,
+      "brandId": "1736663228798",
+      "name": "12MM"
+    },
+    {
+      "id": 1736663267889,
+      "brandId": "1736663228798",
+      "name": "16MM"
+    },
+    {
+      "id": 1736663274030,
+      "brandId": "1736663228798",
+      "name": "20MM"
+    },
+    {
+      "id": 1736663782888,
+      "brandId": "1736663773572",
+      "name": "8MM"
+    },
+    {
+      "id": 1736663831886,
+      "brandId": "1736663773572",
+      "name": "10MM"
+    },
+    {
+      "id": 1736663859193,
+      "brandId": "1736663773572",
+      "name": "12MM"
+    },
+    {
+      "id": 1736663863917,
+      "brandId": "1736663773572",
+      "name": "16MM"
+    },
+    {
+      "id": 1736663869857,
+      "brandId": "1736663773572",
+      "name": "20MM"
+    },
+    {
+      "id": 1736663890064,
+      "brandId": "1736663773572",
+      "name": "25MM"
+    },
+    {
+      "id": 1736663900432,
+      "brandId": "1736663773572",
+      "name": "32MM"
+    },
+    {
+      "id": 1736663937010,
+      "brandId": "1736663928433",
+      "name": "8MM"
+    },
+    {
+      "id": 1736663940554,
+      "brandId": "1736663928433",
+      "name": "10MM"
+    },
+    {
+      "id": 1736663945448,
+      "brandId": "1736663928433",
+      "name": "12MM"
+    },
+    {
+      "id": 1736663949074,
+      "brandId": "1736663928433",
+      "name": "16MM"
+    },
+    {
+      "id": 1736663953019,
+      "brandId": "1736663928433",
+      "name": "20MM"
+    },
+    {
+      "id": 1736663960424,
+      "brandId": "1736663928433",
+      "name": "25MM"
+    },
+    {
+      "id": 1736663970377,
+      "brandId": "1736663928433",
+      "name": "32MM"
+    },
+    {
+      "id": 1736663992909,
+      "brandId": "1736663983224",
+      "name": "8MM"
+    },
+    {
+      "id": 1736663997802,
+      "brandId": "1736663983224",
+      "name": "10MM"
+    },
+    {
+      "id": 1736664001329,
+      "brandId": "1736663983224",
+      "name": "12MM"
+    },
+    {
+      "id": 1736664004758,
+      "brandId": "1736663983224",
+      "name": "16MM"
+    },
+    {
+      "id": 1736664010284,
+      "brandId": "1736663983224",
+      "name": "20MM"
+    },
+    {
+      "id": 1736664014177,
+      "brandId": "1736663983224",
+      "name": "25MM"
+    },
+    {
+      "id": 1736664018904,
+      "brandId": "1736663983224",
+      "name": "32MM"
+    },
+    {
+      "id": 1736664058728,
+      "brandId": "1736664046729",
+      "name": "8MM"
+    },
+    {
+      "id": 1736664063604,
+      "brandId": "1736664046729",
+      "name": "10MM"
+    },
+    {
+      "id": 1736664067664,
+      "brandId": "1736664046729",
+      "name": "12MM"
+    },
+    {
+      "id": 1736664071741,
+      "brandId": "1736664046729",
+      "name": "16MM"
+    },
+    {
+      "id": 1736664076967,
+      "brandId": "1736664046729",
+      "name": "20MM"
+    },
+    {
+      "id": 1736664080778,
+      "brandId": "1736664046729",
+      "name": "25MM"
+    },
+    {
+      "id": 1736664086087,
+      "brandId": "1736664046729",
+      "name": "32MM"
+    },
+    {
+      "id": 1736664279585,
+      "brandId": "1736664196223",
+      "name": "20×20-1.2MM"
+    },
+    {
+      "id": 1736664310620,
+      "brandId": "1736664196223",
+      "name": "20×20-1.6MM"
+    },
+    {
+      "id": 1736664364274,
+      "brandId": "1736664196223",
+      "name": "20×20-2MM"
+    },
+    {
+      "id": 1736664400270,
+      "brandId": "1736664196223",
+      "name": "25×25-1.2MM"
+    },
+    {
+      "id": 1736664437798,
+      "brandId": "1736664196223",
+      "name": "25×25-1.6MM"
+    },
+    {
+      "id": 1736664462710,
+      "brandId": "1736664196223",
+      "name": "25×25-2MM"
+    },
+    {
+      "id": 1736665055292,
+      "brandId": 1736665055291,
+      "name": "10*7"
+    },
+    {
+      "id": 1736665107330,
+      "brandId": 1736665107329,
+      "name": "Tata"
+    },
+    {
+      "id": 1736666466459,
+      "brandId": 1736666466459,
+      "name": "Ramco"
+    },
+    {
+      "id": 1736669325395,
+      "brandId": "1736666466459",
+      "name": "Ultratech"
+    },
+    {
+      "id": 1736669338491,
+      "brandId": "1736666466459",
+      "name": "Maha HD+"
+    },
+    {
+      "id": 1736669363105,
+      "brandId": "1736666466459",
+      "name": "Dalmia"
     }
   ],
   "bills": [
     {
-      "id": 1736102449306,
+      "id": 1736662815034,
       "billNumber": 1,
-      "date": "2025-01-05T18:40:49.306Z",
+      "date": "2025-01-12T06:20:15.034Z",
       "customer": {
-        "name": "Test",
-        "mobile": "9568574251",
-        "address": "Test"
+        "name": "Arun",
+        "mobile": "9999999999",
+        "address": "Ramapuram"
       },
       "staff": {
-        "id": 1736102350766,
-        "name": "Ram",
-        "mobile": "9725855074",
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
         "role": "Staff"
       },
       "items": [
         {
-          "productId": "manual-1736102403331",
-          "brandName": "ARS",
-          "productName": "16mm",
-          "quantity": 600,
-          "units": 58,
+          "productId": "manual-1736662792169",
+          "brandName": "I steel",
+          "productName": "8mm",
+          "quantity": 100,
+          "units": 20,
           "price": 60,
-          "itemTotal": 36000
-        },
-        {
-          "productId": "manual-1736102421730",
-          "brandName": "ARS",
-          "productName": "20mm",
-          "quantity": 900,
-          "units": 75,
-          "price": 65,
-          "itemTotal": 58500
-        },
-        {
-          "productId": "manual-1736102439910",
-          "brandName": "ARS",
-          "productName": "32mm",
-          "quantity": 500,
-          "units": 31,
-          "price": 51,
-          "itemTotal": 25500
+          "itemTotal": 6000
         }
       ],
-      "subtotal": 120000,
-      "transportCharges": 2000,
+      "subtotal": 6000,
+      "transportCharges": 0,
       "extraCharges": 0,
-      "totalAmount": 122000,
+      "totalAmount": 6000,
       "status": "ACTIVE"
     },
     {
-      "id": 1736254273555,
+      "id": 1736663419501,
       "billNumber": 2,
-      "date": "2025-01-07T12:51:13.555Z",
+      "date": "2025-01-12T06:30:19.501Z",
+      "customer": {
+        "name": "Jeevi",
+        "mobile": "7204210783",
+        "address": "Moodbidri"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663176808",
+          "brandName": "Amman-TRY",
+          "productName": "8MM",
+          "quantity": 500,
+          "units": 20,
+          "price": 62,
+          "itemTotal": 31000
+        },
+        {
+          "productId": "1736663192235",
+          "brandName": "Amman-TRY",
+          "productName": "20MM",
+          "quantity": 600,
+          "units": 24,
+          "price": 62.5,
+          "itemTotal": 37500
+        }
+      ],
+      "subtotal": 68500,
+      "transportCharges": 1500,
+      "extraCharges": 0,
+      "totalAmount": 70000,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1736665163097,
+      "billNumber": 3,
+      "date": "2025-01-12T06:59:23.097Z",
+      "customer": {
+        "name": "Surenthar",
+        "mobile": "9710631234",
+        "address": "Katrampakkam"
+      },
+      "staff": {
+        "id": 1736662188141,
+        "name": "Kani",
+        "mobile": "9710631234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663042858",
+          "brandName": "I steel",
+          "productName": "8MM",
+          "quantity": 307.7,
+          "units": 65,
+          "price": 63.5,
+          "itemTotal": 19538.95
+        },
+        {
+          "productId": "1736663047501",
+          "brandName": "I steel",
+          "productName": "10MM",
+          "quantity": 439.7,
+          "units": 60,
+          "price": 62,
+          "itemTotal": 27261.399999999998
+        },
+        {
+          "productId": "1736663060333",
+          "brandName": "I steel",
+          "productName": "16MM",
+          "quantity": 193.3,
+          "units": 10,
+          "price": 62,
+          "itemTotal": 11984.6
+        },
+        {
+          "productId": "manual-1736665055292",
+          "brandName": "Rings",
+          "productName": "10*7",
+          "quantity": 112.6,
+          "units": 300,
+          "price": 55,
+          "itemTotal": 6193
+        },
+        {
+          "productId": "manual-1736665107331",
+          "brandName": "Bindingwire",
+          "productName": "Tata",
+          "quantity": 10,
+          "units": 0.2,
+          "price": 88,
+          "itemTotal": 880
+        }
+      ],
+      "subtotal": 65857.95,
+      "transportCharges": 500,
+      "extraCharges": 0,
+      "totalAmount": 66357.95,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1736666472133,
+      "billNumber": 4,
+      "date": "2025-01-12T07:21:12.133Z",
+      "customer": {
+        "name": "Balachandhiran",
+        "mobile": "9159591068",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662188141,
+        "name": "Kani",
+        "mobile": "9710631234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1736666466459",
+          "brandName": "Cement",
+          "productName": "Ramco",
+          "quantity": 11,
+          "units": 11,
+          "price": 328,
+          "itemTotal": 3608
+        }
+      ],
+      "subtotal": 3608,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 3808,
+      "status": "CANCELLED",
+      "cancellationDate": "2025-01-12T07:22:10.813Z"
+    },
+    {
+      "id": 1736666622867,
+      "billNumber": 5,
+      "date": "2025-01-12T07:23:42.867Z",
+      "customer": {
+        "name": "Balachandhiran",
+        "mobile": "9159581068",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662188141,
+        "name": "Kani",
+        "mobile": "9710631234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736666466459",
+          "brandName": "Cement",
+          "productName": "Ramco",
+          "quantity": 11,
+          "units": 11,
+          "price": 325,
+          "itemTotal": 3575
+        }
+      ],
+      "subtotal": 3575,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 3775,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1736666845956,
+      "billNumber": 6,
+      "date": "2025-01-12T07:27:25.956Z",
+      "customer": {
+        "name": "Cinderella",
+        "mobile": "7204210783",
+        "address": "Moodbidri"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663042858",
+          "brandName": "I steel",
+          "productName": "8MM",
+          "quantity": 50,
+          "units": 5,
+          "price": 55,
+          "itemTotal": 2750
+        }
+      ],
+      "subtotal": 2750,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 2750,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1736760119744,
+      "billNumber": 7,
+      "date": "2025-01-13T09:21:59.744Z",
       "customer": {
         "name": "Test",
-        "mobile": "9998888589",
+        "mobile": "6858698545",
         "address": "Test"
       },
       "staff": {
-        "id": 1736102350766,
-        "name": "Ram",
-        "mobile": "9725855074",
+        "id": 1736662146387,
+        "name": "Banu",
+        "mobile": "9710651234",
         "role": "Staff"
       },
       "items": [
         {
-          "productId": "manual-1736254227488",
-          "brandName": "JSW",
-          "productName": "16mm",
-          "quantity": 600,
-          "units": 52,
-          "price": 61,
-          "itemTotal": 36600
-        },
-        {
-          "productId": "manual-1736254245383",
-          "brandName": "JSW",
-          "productName": "20mm",
-          "quantity": 650,
-          "units": 52,
-          "price": 63,
-          "itemTotal": 40950
-        },
-        {
-          "productId": "manual-1736254259376",
-          "brandName": "JSW",
-          "productName": "25mm",
-          "quantity": 900,
-          "units": 58,
-          "price": 68,
-          "itemTotal": 61200
+          "productId": "1736663181517",
+          "brandName": "Amman-TRY",
+          "productName": "10MM",
+          "quantity": 200,
+          "units": 41,
+          "price": 65,
+          "itemTotal": 13000
         }
       ],
-      "subtotal": 138750,
-      "transportCharges": 3000,
+      "subtotal": 13000,
+      "transportCharges": 500,
       "extraCharges": 0,
-      "totalAmount": 141750,
-      "status": "CANCELLED",
-      "cancellationDate": "2025-01-07T17:06:57.446Z"
+      "totalAmount": 13500,
+      "status": "ACTIVE"
     },
     {
-      "id": 1736269796454,
-      "billNumber": 3,
-      "date": "2025-01-07T17:09:56.454Z",
+      "id": 1736761136952,
+      "billNumber": 8,
+      "date": "2025-01-13T09:38:56.952Z",
       "customer": {
-        "name": "Bala",
-        "mobile": "6856595678",
-        "address": "Kundrathur"
+        "name": "Test",
+        "mobile": "9469484877",
+        "address": "Test"
       },
       "staff": {
-        "id": 1736269678988,
-        "name": "Ram",
-        "mobile": "9359565677",
+        "id": 1736662146387,
+        "name": "Banu",
+        "mobile": "9710651234",
         "role": "Staff"
       },
       "items": [
         {
-          "productId": "1736269732884",
-          "brandName": "BlueGold",
-          "productName": "16mm",
-          "quantity": 800,
-          "units": 45,
-          "price": 60,
-          "itemTotal": 48000
-        },
-        {
-          "productId": "1736254245383",
-          "brandName": "JSW",
-          "productName": "20mm",
-          "quantity": 650,
-          "units": 58,
-          "price": 64,
-          "itemTotal": 41600
-        },
-        {
-          "productId": "manual-1736269782145",
-          "brandName": "BlueGold",
-          "productName": "32mm",
-          "quantity": 680,
-          "units": 41,
-          "price": 58,
-          "itemTotal": 39440
+          "productId": "1736663257420",
+          "brandName": "Blue Gold",
+          "productName": "10MM",
+          "quantity": 500,
+          "units": 74,
+          "price": 65,
+          "itemTotal": 32500
         }
       ],
-      "subtotal": 129040,
-      "transportCharges": 2000,
-      "extraCharges": 150,
-      "totalAmount": 131190,
+      "subtotal": 32500,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 32500,
       "status": "ACTIVE"
     }
   ],
   "staff": [
     {
-      "id": 1736269678988,
-      "name": "Ram",
-      "mobile": "9359565677",
+      "id": 1736662146387,
+      "name": "Banu",
+      "mobile": "9710651234",
       "role": "Staff"
+    },
+    {
+      "id": 1736662188141,
+      "name": "Kani",
+      "mobile": "9710631234",
+      "role": "Staff"
+    },
+    {
+      "id": 1736662247885,
+      "name": "Inbasekar",
+      "mobile": "9710651234",
+      "role": "Staff"
+    },
+    {
+      "id": 1736662297545,
+      "name": "Muthu",
+      "mobile": "9710651234",
+      "role": "Staff"
+    },
+    {
+      "id": 1736662383403,
+      "name": "Mani",
+      "mobile": "9941011234",
+      "role": "Manager"
     }
   ],
-  "currentBillNumber": 4,
-  "timestamp": "2025-01-07T17:10:51.783Z",
+  "currentBillNumber": 9,
+  "timestamp": "2025-01-13T09:47:05.032Z",
   "version": "1.0"
 }
