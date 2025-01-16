@@ -2,68 +2,55 @@
   "brands": [
     {
       "id": 1736662792168,
-      "name": "I steel",
-      "description": ""
+      "name": "I steel"
     },
     {
       "id": 1736662939760,
-      "name": "ARS",
-      "description": "8mm"
+      "name": "ARS"
     },
     {
       "id": 1736663084729,
-      "name": "Arun",
-      "description": "TMT"
+      "name": "Arun"
     },
     {
       "id": 1736663163346,
-      "name": "Amman-TRY",
-      "description": "TMT"
+      "name": "Amman-TRY"
     },
     {
       "id": 1736663228798,
-      "name": "Blue Gold",
-      "description": "TMT"
+      "name": "Blue Gold"
     },
     {
       "id": 1736663773572,
-      "name": "JSW",
-      "description": "TMT"
+      "name": "JSW"
     },
     {
       "id": 1736663928433,
-      "name": "Kamachi",
-      "description": "TMT"
+      "name": "Kamachi"
     },
     {
       "id": 1736663983224,
-      "name": "GBR",
-      "description": "TMT"
+      "name": "GBR"
     },
     {
       "id": 1736664046729,
-      "name": "Pulkit",
-      "description": "TMT"
+      "name": "Pulkit"
     },
     {
       "id": 1736664196223,
-      "name": "MS Pipe",
-      "description": "MS pipe"
+      "name": "MS Pipe"
     },
     {
       "id": 1736665055291,
-      "name": "Rings",
-      "description": ""
+      "name": "Rings"
     },
     {
       "id": 1736665107329,
-      "name": "Bindingwire",
-      "description": ""
+      "name": "Bindingwire"
     },
     {
       "id": 1736666466459,
-      "name": "Cement",
-      "description": ""
+      "name": "Cement"
     }
   ],
   "products": [
