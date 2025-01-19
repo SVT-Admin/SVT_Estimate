@@ -2,55 +2,143 @@
   "brands": [
     {
       "id": 1736662792168,
-      "name": "I steel"
+      "name": "I steel",
+      "description": ""
     },
     {
       "id": 1736662939760,
-      "name": "ARS"
+      "name": "ARS",
+      "description": "8mm"
     },
     {
       "id": 1736663084729,
-      "name": "Arun"
+      "name": "Arun",
+      "description": "TMT"
     },
     {
       "id": 1736663163346,
-      "name": "Amman-TRY"
+      "name": "Amman-TRY",
+      "description": "TMT"
     },
     {
       "id": 1736663228798,
-      "name": "Blue Gold"
+      "name": "Blue Gold",
+      "description": "TMT"
     },
     {
       "id": 1736663773572,
-      "name": "JSW"
+      "name": "JSW",
+      "description": "TMT"
     },
     {
       "id": 1736663928433,
-      "name": "Kamachi"
+      "name": "Kamachi",
+      "description": "TMT"
     },
     {
       "id": 1736663983224,
-      "name": "GBR"
+      "name": "GBR",
+      "description": "TMT"
     },
     {
       "id": 1736664046729,
-      "name": "Pulkit"
+      "name": "Pulkit",
+      "description": "TMT"
     },
     {
       "id": 1736664196223,
-      "name": "MS Pipe"
+      "name": "MS Pipe",
+      "description": "MS pipe"
     },
     {
       "id": 1736665055291,
-      "name": "Rings"
+      "name": "Rings",
+      "description": ""
     },
     {
       "id": 1736665107329,
-      "name": "Bindingwire"
+      "name": "Bindingwire",
+      "description": ""
     },
     {
       "id": 1736666466459,
-      "name": "Cement"
+      "name": "Cement",
+      "description": ""
+    },
+    {
+      "id": 1736766720940,
+      "name": "L Angle",
+      "description": ""
+    },
+    {
+      "id": 1736767099318,
+      "name": "BOLT",
+      "description": ""
+    },
+    {
+      "id": 1736767348398,
+      "name": "BOND",
+      "description": ""
+    },
+    {
+      "id": 1736767933191,
+      "name": "CHANNEL",
+      "description": ""
+    },
+    {
+      "id": 1736768143126,
+      "name": "COVER BLOCK",
+      "description": ""
+    },
+    {
+      "id": 1736771037312,
+      "name": "MS Pipe Round",
+      "description": ""
+    },
+    {
+      "id": 1736771453088,
+      "name": "MS Pipe Rectangle",
+      "description": ""
+    },
+    {
+      "id": 1736771987062,
+      "name": "MESH",
+      "description": ""
+    },
+    {
+      "id": 1736772294759,
+      "name": "DOOR CLAMP",
+      "description": ""
+    },
+    {
+      "id": 1737122895872,
+      "name": "Plat",
+      "description": ""
+    },
+    {
+      "id": 1737123264676,
+      "name": "Nails",
+      "description": ""
+    },
+    {
+      "id": 1737123346539,
+      "name": "Fan hook",
+      "description": ""
+    },
+    {
+      "id": 1737173871177,
+      "name": "Sheet",
+      "description": ""
+    },
+    {
+      "id": 1737200672652,
+      "name": "Roll pline sheet",
+      "description": ""
+    },
+    {
+      "id": 1737200782220,
+      "name": "Screw",
+      "description": ""
     }
   ],
   "products": [
@@ -330,11 +418,6 @@
       "name": "25MM"
     },
     {
-      "id": 1736664086087,
-      "brandId": "1736664046729",
-      "name": "32MM"
-    },
-    {
       "id": 1736664279585,
       "brandId": "1736664196223",
       "name": "20×20-1.2MM"
@@ -393,6 +476,501 @@
       "id": 1736669363105,
       "brandId": "1736666466459",
       "name": "Dalmia"
+    },
+    {
+      "id": 1736766864025,
+      "brandId": "1736766720940",
+      "name": "25×25-3MM"
+    },
+    {
+      "id": 1736766888936,
+      "brandId": "1736766720940",
+      "name": "35×35-6MM"
+    },
+    {
+      "id": 1736766909489,
+      "brandId": "1736766720940",
+      "name": "40×40-6MM"
+    },
+    {
+      "id": 1736766928960,
+      "brandId": "1736766720940",
+      "name": "50×50-6MM"
+    },
+    {
+      "id": 1736766945868,
+      "brandId": "1736766720940",
+      "name": "75×75-6MM"
+    },
+    {
+      "id": 1736766969901,
+      "brandId": "1736766720940",
+      "name": "100×100-12MM"
+    },
+    {
+      "id": 1736767015964,
+      "brandId": "1736665107329",
+      "name": "Royal"
+    },
+    {
+      "id": 1736767034203,
+      "brandId": "1736665107329",
+      "name": "Arun+"
+    },
+    {
+      "id": 1736767149243,
+      "brandId": "1736767099318",
+      "name": "J Hook-5×2"
+    },
+    {
+      "id": 1736767183260,
+      "brandId": "1736767099318",
+      "name": "J Hook-5×2.5"
+    },
+    {
+      "id": 1736767217358,
+      "brandId": "1736767099318",
+      "name": "J Hook-6×2.5"
+    },
+    {
+      "id": 1736767264892,
+      "brandId": "1736767099318",
+      "name": "Rawal-8"
+    },
+    {
+      "id": 1736767287273,
+      "brandId": "1736767099318",
+      "name": "Rawal-M10"
+    },
+    {
+      "id": 1736767305846,
+      "brandId": "1736767099318",
+      "name": "Rawal-M12"
+    },
+    {
+      "id": 1736767819408,
+      "brandId": "1736767348398",
+      "name": "Ghamela 18-MS Bond"
+    },
+    {
+      "id": 1736767854289,
+      "brandId": "1736767348398",
+      "name": "Ghamela PVC-17"
+    },
+    {
+      "id": 1736767892198,
+      "brandId": "1736767348398",
+      "name": "Ghamela PVC-19"
+    },
+    {
+      "id": 1736767987108,
+      "brandId": "1736767933191",
+      "name": "PA CHANNEL-75×40"
+    },
+    {
+      "id": 1736768063844,
+      "brandId": "1736767933191",
+      "name": "PA CHANNEL-100×50"
+    },
+    {
+      "id": 1736768115004,
+      "brandId": "1736767933191",
+      "name": "PA CHANNEL-150×75"
+    },
+    {
+      "id": 1736768163479,
+      "brandId": "1736768143126",
+      "name": "SMALL"
+    },
+    {
+      "id": 1736768170818,
+      "brandId": "1736768143126",
+      "name": "BIG"
+    },
+    {
+      "id": 1736770402925,
+      "brandId": "1736664196223",
+      "name": "32×32-1.2MM"
+    },
+    {
+      "id": 1736770467778,
+      "brandId": "1736664196223",
+      "name": "32×32-1.6MM"
+    },
+    {
+      "id": 1736770495272,
+      "brandId": "1736664196223",
+      "name": "32×32-1.8MM"
+    },
+    {
+      "id": 1736770515391,
+      "brandId": "1736664196223",
+      "name": "32×32-2MM"
+    },
+    {
+      "id": 1736770541852,
+      "brandId": "1736664196223",
+      "name": "40×40-1.2MM"
+    },
+    {
+      "id": 1736770567496,
+      "brandId": "1736664196223",
+      "name": "40×40-1.6MM"
+    },
+    {
+      "id": 1736770587484,
+      "brandId": "1736664196223",
+      "name": "40×40-2MM"
+    },
+    {
+      "id": 1736770701959,
+      "brandId": "1736664196223",
+      "name": "65×65-1.6MM"
+    },
+    {
+      "id": 1736770731348,
+      "brandId": "1736664196223",
+      "name": "65×65-2MM"
+    },
+    {
+      "id": 1736770769625,
+      "brandId": "1736664196223",
+      "name": "50×50-1.6MM"
+    },
+    {
+      "id": 1736770801561,
+      "brandId": "1736664196223",
+      "name": "50×50-1.8MM"
+    },
+    {
+      "id": 1736770826507,
+      "brandId": "1736664196223",
+      "name": "50×50-2MM"
+    },
+    {
+      "id": 1736770870826,
+      "brandId": "1736664196223",
+      "name": "75×75-1.6MM"
+    },
+    {
+      "id": 1736770899614,
+      "brandId": "1736664196223",
+      "name": "75×75-1.8MM"
+    },
+    {
+      "id": 1736770919036,
+      "brandId": "1736664196223",
+      "name": "75×75-2MM"
+    },
+    {
+      "id": 1736770953136,
+      "brandId": "1736664196223",
+      "name": "100×100-1.8MM"
+    },
+    {
+      "id": 1736770967814,
+      "brandId": "1736664196223",
+      "name": "100×100-2MM"
+    },
+    {
+      "id": 1736771079429,
+      "brandId": "1736771037312",
+      "name": "1.5\"Inch-1.6MM"
+    },
+    {
+      "id": 1736771121783,
+      "brandId": "1736771037312",
+      "name": "1.5\"Inch-2MM"
+    },
+    {
+      "id": 1736771148809,
+      "brandId": "1736771037312",
+      "name": "2\"Inch-1.6MM"
+    },
+    {
+      "id": 1736771181044,
+      "brandId": "1736771037312",
+      "name": "2\"Inch-2MM"
+    },
+    {
+      "id": 1736771223998,
+      "brandId": "1736771037312",
+      "name": "2.5\"Inch-1.6MM"
+    },
+    {
+      "id": 1736771265104,
+      "brandId": "1736771037312",
+      "name": "2.5\"Inch-1.8MM"
+    },
+    {
+      "id": 1736771305378,
+      "brandId": "1736771037312",
+      "name": "3\"Inch-2MM"
+    },
+    {
+      "id": 1736771359146,
+      "brandId": "1736771037312",
+      "name": "3\"Inch-RANDOM"
+    },
+    {
+      "id": 1736771391615,
+      "brandId": "1736771037312",
+      "name": "3.5Inch-RANDOM"
+    },
+    {
+      "id": 1736771494094,
+      "brandId": "1736771453088",
+      "name": "40×20-2MM"
+    },
+    {
+      "id": 1736771546168,
+      "brandId": "1736771453088",
+      "name": "50×25-1.6MM"
+    },
+    {
+      "id": 1736771570631,
+      "brandId": "1736771453088",
+      "name": "50×25-2MM"
+    },
+    {
+      "id": 1736771598406,
+      "brandId": "1736771453088",
+      "name": "50×40-2MM"
+    },
+    {
+      "id": 1736771631873,
+      "brandId": "1736771453088",
+      "name": "60×40-1.6MM"
+    },
+    {
+      "id": 1736771652376,
+      "brandId": "1736771453088",
+      "name": "60×40-2MM"
+    },
+    {
+      "id": 1736771718494,
+      "brandId": "1736771453088",
+      "name": "80×40-1.6MM"
+    },
+    {
+      "id": 1736771736484,
+      "brandId": "1736771453088",
+      "name": "80×40-2MM"
+    },
+    {
+      "id": 1736771754590,
+      "brandId": "1736771453088",
+      "name": "75×25-2MM"
+    },
+    {
+      "id": 1736771778638,
+      "brandId": "1736771453088",
+      "name": "100×50-1.8MM"
+    },
+    {
+      "id": 1736771810324,
+      "brandId": "1736771453088",
+      "name": "100×50-2MM"
+    },
+    {
+      "id": 1736771832142,
+      "brandId": "1736771453088",
+      "name": "100×50-3MM"
+    },
+    {
+      "id": 1736771861381,
+      "brandId": "1736771453088",
+      "name": "125×60-2MM"
+    },
+    {
+      "id": 1736771886511,
+      "brandId": "1736771453088",
+      "name": "125×60-4MM"
+    },
+    {
+      "id": 1736771917881,
+      "brandId": "1736771453088",
+      "name": "150×75-2.5MM"
+    },
+    {
+      "id": 1736771958653,
+      "brandId": "1736771453088",
+      "name": "150×80-5MM"
+    },
+    {
+      "id": 1736772015335,
+      "brandId": "1736771987062",
+      "name": "Chicken Mesh 2Feet"
+    },
+    {
+      "id": 1736772049417,
+      "brandId": "1736771987062",
+      "name": "Chicken Mesh 3Feet"
+    },
+    {
+      "id": 1736772109462,
+      "brandId": "1736771987062",
+      "name": "MS Weld Mesh-1×1×12-3Feet"
+    },
+    {
+      "id": 1736772165829,
+      "brandId": "1736771987062",
+      "name": "MS Weld Mesh-1×1×12-4Feet"
+    },
+    {
+      "id": 1736772215138,
+      "brandId": "1736771987062",
+      "name": "Mas Weld Mesh-1×1×12-5Feet"
+    },
+    {
+      "id": 1736772309487,
+      "brandId": "1736772294759",
+      "name": "4\"Inch"
+    },
+    {
+      "id": 1736772321967,
+      "brandId": "1736772294759",
+      "name": "5\"Inch"
+    },
+    {
+      "id": 1736772331324,
+      "brandId": "1736772294759",
+      "name": "6\"Inch"
+    },
+    {
+      "id": 1737119060089,
+      "brandId": "1736665055291",
+      "name": "3*7"
+    },
+    {
+      "id": 1737119100014,
+      "brandId": "1736665055291",
+      "name": "3*10"
+    },
+    {
+      "id": 1737119517808,
+      "brandId": "1736665055291",
+      "name": "3*3"
+    },
+    {
+      "id": 1737120059463,
+      "brandId": "1736665055291",
+      "name": "7*4"
+    },
+    {
+      "id": 1737122895874,
+      "brandId": 1737122895872,
+      "name": "6*1 1/2 6mm"
+    },
+    {
+      "id": 1737123058618,
+      "brandId": "1736664196223",
+      "name": "50*20 1.6mm"
+    },
+    {
+      "id": 1737123096278,
+      "brandId": "1737122895872",
+      "name": "4*4 6mm"
+    },
+    {
+      "id": 1737123264677,
+      "brandId": 1737123264676,
+      "name": "2 inch"
+    },
+    {
+      "id": 1737123288192,
+      "brandId": "1737123264676",
+      "name": "2,5 inch"
+    },
+    {
+      "id": 1737123346540,
+      "brandId": 1737123346539,
+      "name": "Hook"
+    },
+    {
+      "id": 1737173871182,
+      "brandId": 1737173871177,
+      "name": "0.47 .12. feet"
+    },
+    {
+      "id": 1737173921834,
+      "brandId": 1737173871177,
+      "name": "0.47.8.feet"
+    },
+    {
+      "id": 1737199696066,
+      "brandId": "1737173871177",
+      "name": "6 feet sheat ,40mm"
+    },
+    {
+      "id": 1737199787462,
+      "brandId": "1737173871177",
+      "name": "6 feet sheat .47mm"
+    },
+    {
+      "id": 1737200053762,
+      "brandId": "1736665055291",
+      "name": "7*7 rings"
+    },
+    {
+      "id": 1737200118098,
+      "brandId": "1736665055291",
+      "name": "Round rings 7*7"
+    },
+    {
+      "id": 1737200672653,
+      "brandId": 1737200672652,
+      "name": "20 feet"
+    },
+    {
+      "id": 1737200782221,
+      "brandId": 1737200782220,
+      "name": "1 inch"
+    },
+    {
+      "id": 1737205471546,
+      "brandId": "1736666466459",
+      "name": "Zuwari"
+    },
+    {
+      "id": 1737205566054,
+      "brandId": "1737122895872",
+      "name": "5*2 6mm"
+    },
+    {
+      "id": 1737264836616,
+      "brandId": "1737122895872",
+      "name": "5 x 5"
+    },
+    {
+      "id": 1737269895387,
+      "brandId": "1737123264676",
+      "name": "3"
+    },
+    {
+      "id": 1737275966714,
+      "brandId": "1736666466459",
+      "name": "Ramco crete"
+    },
+    {
+      "id": 1737276171292,
+      "brandId": "1737122895872",
+      "name": "5x5"
+    },
+    {
+      "id": 1737276285173,
+      "brandId": "1736664196223",
+      "name": "Asian"
+    },
+    {
+      "id": 1737276377419,
+      "brandId": "1737173871177",
+      "name": "Asian"
+    },
+    {
+      "id": 1737276413448,
+      "brandId": "1736664196223",
+      "name": "Square"
     }
   ],
   "bills": [
@@ -697,6 +1275,1471 @@
       "extraCharges": 0,
       "totalAmount": 32500,
       "status": "ACTIVE"
+    },
+    {
+      "id": 1736773116720,
+      "billNumber": 9,
+      "date": "2025-01-13T12:58:36.720Z",
+      "customer": {
+        "name": "Jeevi",
+        "mobile": "7204210783",
+        "address": "Puduper"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736662990819",
+          "brandName": "ARS",
+          "productName": "8MM",
+          "quantity": 800,
+          "units": 24,
+          "price": 54,
+          "itemTotal": 43200
+        },
+        {
+          "productId": "1736663000554",
+          "brandName": "ARS",
+          "productName": "10MM",
+          "quantity": 300,
+          "units": 18,
+          "price": 54,
+          "itemTotal": 16200
+        }
+      ],
+      "subtotal": 59400,
+      "transportCharges": 500,
+      "extraCharges": 0,
+      "totalAmount": 59900,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737116967701,
+      "billNumber": 10,
+      "date": "2025-01-17T12:29:27.701Z",
+      "customer": {
+        "name": "Jeevi",
+        "mobile": "7204210783",
+        "address": "Shivashathi"
+      },
+      "staff": {
+        "id": 1736662146387,
+        "name": "Banu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736772015335",
+          "brandName": "MESH",
+          "productName": "Chicken Mesh 2Feet",
+          "quantity": 1,
+          "units": 1,
+          "price": 190,
+          "itemTotal": 190
+        },
+        {
+          "productId": "1736768163479",
+          "brandName": "COVER BLOCK",
+          "productName": "SMALL",
+          "quantity": 1,
+          "units": 1,
+          "price": 80,
+          "itemTotal": 80
+        },
+        {
+          "productId": "1736768170818",
+          "brandName": "COVER BLOCK",
+          "productName": "BIG",
+          "quantity": 1,
+          "units": 1,
+          "price": 300,
+          "itemTotal": 300
+        },
+        {
+          "productId": "1736767149243",
+          "brandName": "BOLT",
+          "productName": "J Hook-5×2",
+          "quantity": 20,
+          "units": 4,
+          "price": 24,
+          "itemTotal": 480
+        }
+      ],
+      "subtotal": 1050,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 1050,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737117373731,
+      "billNumber": 11,
+      "date": "2025-01-17T12:36:13.731Z",
+      "customer": {
+        "name": "Jeevi",
+        "mobile": "7204210783",
+        "address": "Shivashati"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663104749",
+          "brandName": "Arun",
+          "productName": "12MM",
+          "quantity": 500,
+          "units": 12,
+          "price": 57.5,
+          "itemTotal": 28750
+        },
+        {
+          "productId": "1736666466459",
+          "brandName": "Cement",
+          "productName": "Ramco",
+          "quantity": 10,
+          "units": 10,
+          "price": 325,
+          "itemTotal": 3250
+        },
+        {
+          "productId": "1736663109441",
+          "brandName": "Arun",
+          "productName": "16MM",
+          "quantity": 222.2,
+          "units": 12,
+          "price": 57.5,
+          "itemTotal": 12776.5
+        }
+      ],
+      "subtotal": 44776.5,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 44976.5,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737119167381,
+      "billNumber": 12,
+      "date": "2025-01-17T13:06:07.381Z",
+      "customer": {
+        "name": "Suranther",
+        "mobile": "9498143195",
+        "address": "Katambakkam"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663052477",
+          "brandName": "I steel",
+          "productName": "12MM",
+          "quantity": 129.1,
+          "units": 12,
+          "price": 62,
+          "itemTotal": 8004.2
+        },
+        {
+          "productId": "1736663047501",
+          "brandName": "I steel",
+          "productName": "10MM",
+          "quantity": 51.6,
+          "units": 7,
+          "price": 62,
+          "itemTotal": 3199.2000000000003
+        },
+        {
+          "productId": "1736665055292",
+          "brandName": "Rings",
+          "productName": "10*7",
+          "quantity": 14.3,
+          "units": 40,
+          "price": 55,
+          "itemTotal": 786.5
+        },
+        {
+          "productId": "manual-1737119060090",
+          "brandName": "Rings",
+          "productName": "3*7",
+          "quantity": 34.8,
+          "units": 150,
+          "price": 55,
+          "itemTotal": 1913.9999999999998
+        },
+        {
+          "productId": "manual-1737119100015",
+          "brandName": "Rings",
+          "productName": "3*10",
+          "quantity": 8.7,
+          "units": 30,
+          "price": 56,
+          "itemTotal": 487.19999999999993
+        },
+        {
+          "productId": "1736665107330",
+          "brandName": "Bindingwire",
+          "productName": "Tata",
+          "quantity": 10,
+          "units": 10,
+          "price": 88,
+          "itemTotal": 880
+        }
+      ],
+      "subtotal": 15271.1,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 15471.1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737119533161,
+      "billNumber": 13,
+      "date": "2025-01-17T13:12:13.161Z",
+      "customer": {
+        "name": "Chennai steel",
+        "mobile": "9176108016",
+        "address": "Alaknanda nager"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1737119060089",
+          "brandName": "Rings",
+          "productName": "3*7",
+          "quantity": 91.8,
+          "units": 400,
+          "price": 54,
+          "itemTotal": 4957.2
+        },
+        {
+          "productId": "manual-1737119517809",
+          "brandName": "Rings",
+          "productName": "3*3",
+          "quantity": 30.1,
+          "units": 170,
+          "price": 55,
+          "itemTotal": 1655.5
+        }
+      ],
+      "subtotal": 6612.7,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 6612.7,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737119945558,
+      "billNumber": 14,
+      "date": "2025-01-17T13:19:05.558Z",
+      "customer": {
+        "name": "Karithi",
+        "mobile": "9884492309",
+        "address": "Somangalam"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736662990819",
+          "brandName": "ARS",
+          "productName": "8MM",
+          "quantity": 140.2,
+          "units": 30,
+          "price": 63.5,
+          "itemTotal": 8902.699999999999
+        },
+        {
+          "productId": "1736665107330",
+          "brandName": "Bindingwire",
+          "productName": "Tata",
+          "quantity": 30,
+          "units": 30,
+          "price": 88,
+          "itemTotal": 2640
+        },
+        {
+          "productId": "1736663007494",
+          "brandName": "ARS",
+          "productName": "12MM",
+          "quantity": 260.2,
+          "units": 25,
+          "price": 62,
+          "itemTotal": 16132.4
+        }
+      ],
+      "subtotal": 27675.1,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 27875.1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737120115578,
+      "billNumber": 15,
+      "date": "2025-01-17T13:21:55.578Z",
+      "customer": {
+        "name": "Uvarji",
+        "mobile": "9840098210",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737120059464",
+          "brandName": "Rings",
+          "productName": "7*4",
+          "quantity": 41.9,
+          "units": 160,
+          "price": 55,
+          "itemTotal": 2304.5
+        }
+      ],
+      "subtotal": 2304.5,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 2304.5,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737120631537,
+      "billNumber": 16,
+      "date": "2025-01-17T13:30:31.537Z",
+      "customer": {
+        "name": "Sokkalingam",
+        "mobile": "9677055230",
+        "address": "Alaknanda nagar"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663007494",
+          "brandName": "ARS",
+          "productName": "12MM",
+          "quantity": 249.9,
+          "units": 24,
+          "price": 62,
+          "itemTotal": 15493.800000000001
+        },
+        {
+          "productId": "1736663000554",
+          "brandName": "ARS",
+          "productName": "10MM",
+          "quantity": 200,
+          "units": 28,
+          "price": 62.5,
+          "itemTotal": 12500
+        },
+        {
+          "productId": "1736665055292",
+          "brandName": "Rings",
+          "productName": "10*7",
+          "quantity": 103.4,
+          "units": 280,
+          "price": 55,
+          "itemTotal": 5687
+        },
+        {
+          "productId": "1736665107330",
+          "brandName": "Bindingwire",
+          "productName": "Tata",
+          "quantity": 5,
+          "units": 5,
+          "price": 88,
+          "itemTotal": 440
+        }
+      ],
+      "subtotal": 34120.8,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 34320.8,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737120933724,
+      "billNumber": 17,
+      "date": "2025-01-17T13:35:33.724Z",
+      "customer": {
+        "name": "Joaph",
+        "mobile": "9962804473",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736664279585",
+          "brandName": "MS Pipe",
+          "productName": "20×20-1.2MM",
+          "quantity": 43.5,
+          "units": 10,
+          "price": 65,
+          "itemTotal": 2827.5
+        }
+      ],
+      "subtotal": 2827.5,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 2827.5,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737122262401,
+      "billNumber": 18,
+      "date": "2025-01-17T13:57:42.401Z",
+      "customer": {
+        "name": "Poopalan",
+        "mobile": "9884768148",
+        "address": "Keevalur"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663052477",
+          "brandName": "I steel",
+          "productName": "12MM",
+          "quantity": 216.3,
+          "units": 20,
+          "price": 62.5,
+          "itemTotal": 13518.75
+        },
+        {
+          "productId": "1736663042858",
+          "brandName": "I steel",
+          "productName": "8MM",
+          "quantity": 142.8,
+          "units": 30,
+          "price": 64,
+          "itemTotal": 9139.2
+        }
+      ],
+      "subtotal": 22657.95,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 22857.95,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737122506882,
+      "billNumber": 19,
+      "date": "2025-01-17T14:01:46.882Z",
+      "customer": {
+        "name": "Gobal",
+        "mobile": "8939481304",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736669363105",
+          "brandName": "Cement",
+          "productName": "Dalmia",
+          "quantity": 15,
+          "units": 15,
+          "price": 310,
+          "itemTotal": 4650
+        }
+      ],
+      "subtotal": 4650,
+      "transportCharges": 100,
+      "extraCharges": 0,
+      "totalAmount": 4750,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737122675446,
+      "billNumber": 20,
+      "date": "2025-01-17T14:04:35.446Z",
+      "customer": {
+        "name": "Chennai steel",
+        "mobile": "8436844310",
+        "address": "Puduper"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1737119517808",
+          "brandName": "Rings",
+          "productName": "3*3",
+          "quantity": 26.4,
+          "units": 150,
+          "price": 54,
+          "itemTotal": 1425.6
+        },
+        {
+          "productId": "1737119060089",
+          "brandName": "Rings",
+          "productName": "3*7",
+          "quantity": 3.5,
+          "units": 15,
+          "price": 54,
+          "itemTotal": 189
+        },
+        {
+          "productId": "1737119060089",
+          "brandName": "Rings",
+          "productName": "3*7",
+          "quantity": 22.4,
+          "units": 100,
+          "price": 54,
+          "itemTotal": 1209.6
+        },
+        {
+          "productId": "1737119517808",
+          "brandName": "Rings",
+          "productName": "3*3",
+          "quantity": 10.6,
+          "units": 60,
+          "price": 54,
+          "itemTotal": 572.4
+        }
+      ],
+      "subtotal": 3396.6,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 3396.6,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737122901939,
+      "billNumber": 21,
+      "date": "2025-01-17T14:08:21.939Z",
+      "customer": {
+        "name": "Nearase",
+        "mobile": "9941009665",
+        "address": "Somankalam"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736664279585",
+          "brandName": "MS Pipe",
+          "productName": "20×20-1.2MM",
+          "quantity": 17.6,
+          "units": 4,
+          "price": 65,
+          "itemTotal": 1144
+        },
+        {
+          "productId": "manual-1737122895874",
+          "brandName": "Plat",
+          "productName": "6*1 1/2 6mm",
+          "quantity": 1.04,
+          "units": 4,
+          "price": 78,
+          "itemTotal": 81.12
+        }
+      ],
+      "subtotal": 1225.12,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 1225.12,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737123174437,
+      "billNumber": 22,
+      "date": "2025-01-17T14:12:54.437Z",
+      "customer": {
+        "name": "Nearas",
+        "mobile": "9941009665",
+        "address": "Somankalam"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736664310620",
+          "brandName": "MS Pipe",
+          "productName": "20×20-1.6MM",
+          "quantity": 22.9,
+          "units": 4,
+          "price": 63,
+          "itemTotal": 1442.6999999999998
+        },
+        {
+          "productId": "manual-1737123058619",
+          "brandName": "MS Pipe",
+          "productName": "50*20 1.6mm",
+          "quantity": 41.5,
+          "units": 4,
+          "price": 63,
+          "itemTotal": 2614.5
+        },
+        {
+          "productId": "manual-1737123096279",
+          "brandName": "Plat",
+          "productName": "4*4 6mm",
+          "quantity": 1.835,
+          "units": 4,
+          "price": 78,
+          "itemTotal": 143.13
+        }
+      ],
+      "subtotal": 4200.33,
+      "transportCharges": 400,
+      "extraCharges": 0,
+      "totalAmount": 4600.33,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737123352289,
+      "billNumber": 23,
+      "date": "2025-01-17T14:15:52.289Z",
+      "customer": {
+        "name": "Sikander",
+        "mobile": "8098429848",
+        "address": "Katrampakam"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737123264678",
+          "brandName": "Nails",
+          "productName": "2 inch",
+          "quantity": 3,
+          "units": 3,
+          "price": 80,
+          "itemTotal": 240
+        },
+        {
+          "productId": "manual-1737123288193",
+          "brandName": "Nails",
+          "productName": "2,5 inch",
+          "quantity": 2,
+          "units": 2,
+          "price": 77,
+          "itemTotal": 154
+        },
+        {
+          "productId": "manual-1737123346541",
+          "brandName": "Fan hook",
+          "productName": "Hook",
+          "quantity": 1.42,
+          "units": 6,
+          "price": 180,
+          "itemTotal": 255.6
+        }
+      ],
+      "subtotal": 649.6,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 649.6,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737174033914,
+      "billNumber": 24,
+      "date": "2025-01-18T04:20:33.914Z",
+      "customer": {
+        "name": "Suraes",
+        "mobile": "8489990487",
+        "address": "Puduper"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Inbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737173871183",
+          "brandName": "Sheet",
+          "productName": "0.47 .12. feet",
+          "quantity": 70.1,
+          "units": 5,
+          "price": 106,
+          "itemTotal": 7430.599999999999
+        },
+        {
+          "productId": "manual-1737173921836",
+          "brandName": "Sheet",
+          "productName": "0.47.8.feet",
+          "quantity": 102.8,
+          "units": 11,
+          "price": 106,
+          "itemTotal": 10896.8
+        },
+        {
+          "productId": "1736770567496",
+          "brandName": "MS Pipe",
+          "productName": "40×40-1.6MM",
+          "quantity": 51.4,
+          "units": 5,
+          "price": 63,
+          "itemTotal": 3238.2
+        },
+        {
+          "productId": "1736770769625",
+          "brandName": "MS Pipe",
+          "productName": "50×50-1.6MM",
+          "quantity": 69.4,
+          "units": 5,
+          "price": 63,
+          "itemTotal": 4372.200000000001
+        },
+        {
+          "productId": "1736771148809",
+          "brandName": "MS Pipe Round",
+          "productName": "2\"Inch-1.6MM",
+          "quantity": 12.6,
+          "units": 1,
+          "price": 63,
+          "itemTotal": 793.8
+        }
+      ],
+      "subtotal": 26731.6,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 26731.6,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737174265244,
+      "billNumber": 25,
+      "date": "2025-01-18T04:24:25.244Z",
+      "customer": {
+        "name": "Paranthaman",
+        "mobile": "9940467392",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736669338491",
+          "brandName": "Cement",
+          "productName": "Maha HD+",
+          "quantity": 2,
+          "units": 2,
+          "price": 280,
+          "itemTotal": 560
+        }
+      ],
+      "subtotal": 560,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 560,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737178853299,
+      "billNumber": 26,
+      "date": "2025-01-18T05:40:53.299Z",
+      "customer": {
+        "name": "P.arul anandham",
+        "mobile": "7708066899",
+        "address": "Nantham bakkam"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663015482",
+          "brandName": "ARS",
+          "productName": "16MM",
+          "quantity": 613,
+          "units": 33,
+          "price": 61.5,
+          "itemTotal": 37699.5
+        },
+        {
+          "productId": "1736663007494",
+          "brandName": "ARS",
+          "productName": "12MM",
+          "quantity": 156.8,
+          "units": 15,
+          "price": 61.5,
+          "itemTotal": 9643.2
+        },
+        {
+          "productId": "1736662990819",
+          "brandName": "ARS",
+          "productName": "8MM",
+          "quantity": 234.3,
+          "units": 50,
+          "price": 63,
+          "itemTotal": 14760.900000000001
+        },
+        {
+          "productId": "1736665107330",
+          "brandName": "Bindingwire",
+          "productName": "Tata",
+          "quantity": 30,
+          "units": 30,
+          "price": 88,
+          "itemTotal": 2640
+        },
+        {
+          "productId": "1736768163479",
+          "brandName": "COVER BLOCK",
+          "productName": "SMALL",
+          "quantity": 6,
+          "units": 6,
+          "price": 80,
+          "itemTotal": 480
+        }
+      ],
+      "subtotal": 65223.6,
+      "transportCharges": 200,
+      "extraCharges": 0,
+      "totalAmount": 65423.6,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737182299066,
+      "billNumber": 27,
+      "date": "2025-01-18T06:38:19.066Z",
+      "customer": {
+        "name": "Om shakthi agency",
+        "mobile": "9790848990",
+        "address": "Tharkath"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663782888",
+          "brandName": "JSW",
+          "productName": "8MM",
+          "quantity": 137.6,
+          "units": 30,
+          "price": 74,
+          "itemTotal": 10182.4
+        },
+        {
+          "productId": "1736663859193",
+          "brandName": "JSW",
+          "productName": "12MM",
+          "quantity": 52.6,
+          "units": 5,
+          "price": 71.5,
+          "itemTotal": 3760.9
+        }
+      ],
+      "subtotal": 13943.3,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 13943.3,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737199796293,
+      "billNumber": 28,
+      "date": "2025-01-18T11:29:56.293Z",
+      "customer": {
+        "name": "Saravanan",
+        "mobile": "9941036139",
+        "address": "Sakthi nagar"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736664400270",
+          "brandName": "MS Pipe",
+          "productName": "25×25-1.2MM",
+          "quantity": 32.5,
+          "units": 6,
+          "price": 65,
+          "itemTotal": 2112.5
+        },
+        {
+          "productId": "manual-1737199696067",
+          "brandName": "Sheet",
+          "productName": "6 feet sheat ,40mm",
+          "quantity": 58.9,
+          "units": 10,
+          "price": 106,
+          "itemTotal": 6243.4
+        },
+        {
+          "productId": "manual-1737199787464",
+          "brandName": "Sheet",
+          "productName": "6 feet sheat .47mm",
+          "quantity": 7.7,
+          "units": 1,
+          "price": 106,
+          "itemTotal": 816.2
+        }
+      ],
+      "subtotal": 9172.1,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 9172.1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737200126512,
+      "billNumber": 29,
+      "date": "2025-01-18T11:35:26.512Z",
+      "customer": {
+        "name": "Prabakaran",
+        "mobile": "9176481933",
+        "address": "Sakthi nagar"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737200053763",
+          "brandName": "Rings",
+          "productName": "7*7 rings",
+          "quantity": 4.7,
+          "units": 15,
+          "price": 55,
+          "itemTotal": 258.5
+        },
+        {
+          "productId": "manual-1737200118099",
+          "brandName": "Rings",
+          "productName": "Round rings 7*7",
+          "quantity": 7.2,
+          "units": 30,
+          "price": 56,
+          "itemTotal": 403.2
+        }
+      ],
+      "subtotal": 661.7,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 661.7,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737200876106,
+      "billNumber": 30,
+      "date": "2025-01-18T11:47:56.106Z",
+      "customer": {
+        "name": "Surase",
+        "mobile": "8489990487",
+        "address": "Puduper"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Enbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737200672654",
+          "brandName": "Roll pline sheet",
+          "productName": "20 feet",
+          "quantity": 16.3,
+          "units": 16.3,
+          "price": 120,
+          "itemTotal": 1956
+        },
+        {
+          "productId": "manual-1737200782222",
+          "brandName": "Screw",
+          "productName": "1 inch",
+          "quantity": 100,
+          "units": 100,
+          "price": 3,
+          "itemTotal": 300
+        },
+        {
+          "productId": "1736770541852",
+          "brandName": "MS Pipe",
+          "productName": "40×40-1.2MM",
+          "quantity": 15.3,
+          "units": 2,
+          "price": 65,
+          "itemTotal": 994.5
+        },
+        {
+          "productId": "1736664400270",
+          "brandName": "MS Pipe",
+          "productName": "25×25-1.2MM",
+          "quantity": 21.1,
+          "units": 4,
+          "price": 65,
+          "itemTotal": 1371.5
+        }
+      ],
+      "subtotal": 4622,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 4622,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737201240011,
+      "billNumber": 31,
+      "date": "2025-01-18T11:54:00.011Z",
+      "customer": {
+        "name": "Bass infro",
+        "mobile": "7904190315",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Enbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663042858",
+          "brandName": "I steel",
+          "productName": "8MM",
+          "quantity": 47.1,
+          "units": 10,
+          "price": 66.5,
+          "itemTotal": 3132.15
+        },
+        {
+          "productId": "1736663047501",
+          "brandName": "I steel",
+          "productName": "10MM",
+          "quantity": 51.6,
+          "units": 7,
+          "price": 65.5,
+          "itemTotal": 3379.8
+        }
+      ],
+      "subtotal": 6511.950000000001,
+      "transportCharges": 300,
+      "extraCharges": 0,
+      "totalAmount": 6811.950000000001,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737201337842,
+      "billNumber": 32,
+      "date": "2025-01-18T11:55:37.842Z",
+      "customer": {
+        "name": "Sasikumar",
+        "mobile": "9791072900",
+        "address": "Kartampkkam"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Enbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663042858",
+          "brandName": "I steel",
+          "productName": "8MM",
+          "quantity": 94.2,
+          "units": 20,
+          "price": 63.5,
+          "itemTotal": 5981.7
+        }
+      ],
+      "subtotal": 5981.7,
+      "transportCharges": 400,
+      "extraCharges": 0,
+      "totalAmount": 6381.7,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737205481557,
+      "billNumber": 33,
+      "date": "2025-01-18T13:04:41.557Z",
+      "customer": {
+        "name": "Niram construction",
+        "mobile": "6383183529",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Enbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "1736663992909",
+          "brandName": "GBR",
+          "productName": "8MM",
+          "quantity": 47.5,
+          "units": 10,
+          "price": 62,
+          "itemTotal": 2945
+        },
+        {
+          "productId": "1736663997802",
+          "brandName": "GBR",
+          "productName": "10MM",
+          "quantity": 51.9,
+          "units": 7,
+          "price": 61,
+          "itemTotal": 3165.9
+        },
+        {
+          "productId": "manual-1737205471547",
+          "brandName": "Cement",
+          "productName": "Zuwari",
+          "quantity": 50,
+          "units": 50,
+          "price": 295,
+          "itemTotal": 14750
+        }
+      ],
+      "subtotal": 20860.9,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 20860.9,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737205571572,
+      "billNumber": 34,
+      "date": "2025-01-18T13:06:11.572Z",
+      "customer": {
+        "name": "Giri rajan",
+        "mobile": "7904442129",
+        "address": "Somankalam"
+      },
+      "staff": {
+        "id": 1736662247885,
+        "name": "Enbasekar",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737205566055",
+          "brandName": "Plat",
+          "productName": "5*2 6mm",
+          "quantity": 5.745,
+          "units": 28,
+          "price": 78,
+          "itemTotal": 448.11
+        }
+      ],
+      "subtotal": 448.11,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 448.11,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737265125439,
+      "billNumber": 35,
+      "date": "2025-01-19T05:38:45.439Z",
+      "customer": {
+        "name": "Giri rajan",
+        "mobile": "7904442129",
+        "address": "Somangalam"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737265107133",
+          "brandName": "Plat",
+          "productName": "5 x 5",
+          "quantity": 7.265,
+          "units": 10,
+          "price": 78,
+          "itemTotal": 566.67
+        }
+      ],
+      "subtotal": 566.67,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 566.67,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737265409887,
+      "billNumber": 36,
+      "date": "2025-01-19T05:43:29.887Z",
+      "customer": {
+        "name": "Surenthar",
+        "mobile": "9498143195",
+        "address": "Katrambakkam"
+      },
+      "staff": {
+        "id": 1736662297545,
+        "name": "Muthu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737265284463",
+          "brandName": "I steel",
+          "productName": "8mm",
+          "quantity": 56.9,
+          "units": 12,
+          "price": 63.5,
+          "itemTotal": 3613.15
+        },
+        {
+          "productId": "manual-1737265397733",
+          "brandName": "Bindingwire",
+          "productName": "Tata",
+          "quantity": 10,
+          "units": 10,
+          "price": 88,
+          "itemTotal": 880
+        }
+      ],
+      "subtotal": 4493.15,
+      "transportCharges": 300,
+      "extraCharges": 0,
+      "totalAmount": 4793.15,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737269681813,
+      "billNumber": 37,
+      "date": "2025-01-19T06:54:41.813Z",
+      "customer": {
+        "name": "Kamala kannan",
+        "mobile": "9962087332",
+        "address": "Melathur"
+      },
+      "staff": {
+        "id": 1736662146387,
+        "name": "Banu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737269612143",
+          "brandName": "Cement",
+          "productName": "Ultratech",
+          "quantity": 50,
+          "units": 50,
+          "price": 320,
+          "itemTotal": 16000
+        }
+      ],
+      "subtotal": 16000,
+      "transportCharges": 400,
+      "extraCharges": 0,
+      "totalAmount": 16400,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737269907512,
+      "billNumber": 38,
+      "date": "2025-01-19T06:58:27.512Z",
+      "customer": {
+        "name": "Sikanthur",
+        "mobile": "8098429848",
+        "address": "Katrambakkam"
+      },
+      "staff": {
+        "id": 1736662146387,
+        "name": "Banu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737269895388",
+          "brandName": "Nails",
+          "productName": "3",
+          "quantity": 3.105,
+          "units": 3.105,
+          "price": 77,
+          "itemTotal": 239.085
+        }
+      ],
+      "subtotal": 239.085,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 239.085,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737276035603,
+      "billNumber": 39,
+      "date": "2025-01-19T08:40:35.603Z",
+      "customer": {
+        "name": "Vengadesh",
+        "mobile": "7299999560",
+        "address": "Nallur"
+      },
+      "staff": {
+        "id": 1736662146387,
+        "name": "Banu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737275966715",
+          "brandName": "Cement",
+          "productName": "Ramco crete",
+          "quantity": 50,
+          "units": 50,
+          "price": 335,
+          "itemTotal": 16750
+        },
+        {
+          "productId": "manual-1737275992675",
+          "brandName": "I steel",
+          "productName": "16mm",
+          "quantity": 58.1,
+          "units": 3,
+          "price": 62,
+          "itemTotal": 3602.2000000000003
+        },
+        {
+          "productId": "manual-1737276011364",
+          "brandName": "I steel",
+          "productName": "12mm",
+          "quantity": 54.3,
+          "units": 5,
+          "price": 62,
+          "itemTotal": 3366.6
+        }
+      ],
+      "subtotal": 23718.8,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 23718.8,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1737276425257,
+      "billNumber": 40,
+      "date": "2025-01-19T08:47:05.257Z",
+      "customer": {
+        "name": "Giri rajan",
+        "mobile": "7904442129",
+        "address": "Somangalam"
+      },
+      "staff": {
+        "id": 1736662146387,
+        "name": "Banu",
+        "mobile": "9710651234",
+        "role": "Staff"
+      },
+      "items": [
+        {
+          "productId": "manual-1737276171293",
+          "brandName": "Plat",
+          "productName": "5x5",
+          "quantity": 10.37,
+          "units": 14,
+          "price": 78,
+          "itemTotal": 808.8599999999999
+        },
+        {
+          "productId": "manual-1737276377420",
+          "brandName": "Sheet",
+          "productName": "Asian",
+          "quantity": 62.7,
+          "units": 8,
+          "price": 106,
+          "itemTotal": 6646.200000000001
+        },
+        {
+          "productId": "manual-1737276413449",
+          "brandName": "MS Pipe",
+          "productName": "Square",
+          "quantity": 178.3,
+          "units": 10,
+          "price": 66,
+          "itemTotal": 11767.800000000001
+        }
+      ],
+      "subtotal": 19222.86,
+      "transportCharges": 0,
+      "extraCharges": 0,
+      "totalAmount": 19222.86,
+      "status": "ACTIVE"
     }
   ],
   "staff": [
@@ -714,7 +2757,7 @@
     },
     {
       "id": 1736662247885,
-      "name": "Inbasekar",
+      "name": "Enbasekar",
       "mobile": "9710651234",
       "role": "Staff"
     },
@@ -731,7 +2774,7 @@
       "role": "Manager"
     }
   ],
-  "currentBillNumber": 9,
-  "timestamp": "2025-01-13T09:47:05.032Z",
+  "currentBillNumber": 41,
+  "timestamp": "2025-01-19T08:47:05.260Z",
   "version": "1.0"
 }
